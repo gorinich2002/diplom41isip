@@ -1,0 +1,5 @@
+{
+    "port":5000,
+    "jwtSecret":"Diplom js pelevin",
+    "mongoUri":"mongodb+srv://ivan:diplom2021mern3315158252@cluster0.ug4vl.mongodb.net/app?retryWrites=true&w=majority"
+}

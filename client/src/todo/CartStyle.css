@@ -1,0 +1,25 @@
+.cartTable__row:nth-child(odd){
+   
+    background-color: #a7a7a7;
+}
+
+
+#cartViewer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.cart__img{
+    height: 50px;
+}
+
+.cart__table{
+    border-collapse: collapse;
+    border:none;
+    width: 100%;
+} 
+.cartTable__row{
+    width: 100%;
+}
