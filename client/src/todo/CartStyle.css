@@ -1,4 +1,4 @@
-.cartTable__row:nth-child(odd){
+.cartTable__row:nth-child(even){
    
     background-color: #a7a7a7;
 }
@@ -19,7 +19,49 @@
     border-collapse: collapse;
     border:none;
     width: 100%;
+    margin-top: 30px;
 } 
 .cartTable__row{
     width: 100%;
+    height: 40px;
+}
+
+.cart__DeleteBtn{
+    background-color:#1E1E1E;
+    color: white;
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cart__DeleteText{
+    background-color: #761717;
+  
+    color: white;
+    width: 100px;
+
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: default;
+   
+}
+.btnTd{
+   
+    max-width: 60px;
+}
+.bigTopMargin{
+    margin-top: 200px;
+}
+
+.orderBtn{
+    background-color: #198754;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
 }

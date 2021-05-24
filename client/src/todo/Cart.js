@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-
+import { Link } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import { ReduxMainContext } from "../index";
 import { deleteProductIntoCartAction } from "../actions/actions";
@@ -9,16 +9,26 @@ function DeleteBtn(props) {
   const id = props.productId;
   const deleteListenr = props.deleteListenr;
   const store = useContext(ReduxMainContext);
-
+  const [isRemove, setRemove] = useState(false)
+if(!isRemove){
   return (
-    <div
+    <div className='cart__DeleteBtn'
       onClick={() => {
         deleteListenr(id);
+        setRemove(true)
       }}
     >
-      Delete
+      Удалить
     </div>
   );
+    }
+    else{
+      return(
+        <div className='cart__DeleteText'
+
+        >Товар удалён</div>
+      )
+    }
 }
 
 function ProductPosition(props) {
@@ -42,11 +52,11 @@ function ProductPosition(props) {
         <img className="cart__img" src={`./images/${imgname}.jpg`} />
       </td>
       <td>{name}</td>
-      <td>{desc}</td>
+
       <td>{price}</td>
       <td>{count}</td>
-      <td>{totalPrice}</td>
-      <td>
+      <td>{count*price}</td>
+      <td className='btnTd'>
         <DeleteBtn deleteListenr={deleteListenr} productId={id} />
       </td>
     </tr>
@@ -63,22 +73,48 @@ function Cart(props) {
     return (
       <ProductPosition
         name={product.product.name}
-        desc={product.product.desc}
         price={product.product.price}
         count={product.count}
         imgname={product.product.imgname}
       />
     );
   });
+  if(ProductPositionList.length>0){
   return (
     <div id="cartViewer">
       <h1>Корзина</h1>
       <br />
       <table className="cart__table">
-        <tbody>{ProductPositionList}</tbody>
+        <tbody>
+          <tr className="cartTable__row">
+            <td>
+
+            </td>
+            <td><b>Название</b></td>
+
+            <td><b>Цена</b></td>
+            <td><b>Количество</b></td>
+            <td><b>Стоймость</b></td>
+            <td>
+             
+            </td>
+          </tr>
+          {ProductPositionList}
+        </tbody>
       </table>
+      <div className='orderBtn'><Link to='/confirm'>Оформить заказ</Link></div>
     </div>
   );
+  }
+  else{
+    return(
+      <div id="cartViewer">
+      <h1>Корзина</h1>
+      <br />
+      <h2 className='bigTopMargin'>Корзина пуста</h2>
+    </div>
+    )
+  }
 }
 
 export default Cart;

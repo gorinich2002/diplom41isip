@@ -36,10 +36,10 @@ function ProductCard(props) {
     setCount((count) => count + 1);
   };
   function changeCountInput(e) {
-    if (!isThisElemInCart) {
+    if (!contextStore.getState().cart.find(isThisElemInCart)) {
       let value = e.target.value;
 
-      setCount(e.target.value);
+      setCount( +e.target.value);
     }
   }
 

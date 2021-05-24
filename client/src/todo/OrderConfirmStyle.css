@@ -8,4 +8,13 @@
     margin: 3px;    
     padding: 5px;
     border-radius: 30px;
+    border: 1px solid black;
+}
+.orderForm td{
+
+    padding: 2px;
+}
+.orderForm td{
+
+    padding-left: 15px;
 }

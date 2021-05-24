@@ -13,6 +13,7 @@ import mainShopReduser from "./redusers/mainReduser";
 import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
 import Cart from "./todo/Cart";
+import OrderConfirm from "./todo/OrderConfirm";
 
 const initialState = {
   cart: [],
@@ -103,6 +104,9 @@ class Root extends React.Component {
             </Route>
             <Route path="/cart">
               <Cart />
+            </Route>
+            <Route path="/confirm">
+              <OrderConfirm />
             </Route>
             <Redirect to="/"></Redirect>
           </Switch>
