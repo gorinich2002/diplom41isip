@@ -40,7 +40,7 @@ function Header() {
     <header id="header">
       <ul className="headerUl">
       <li>
-      <Link to='/howToPay'>Оплата и доставка</Link>
+      <Link to='/about'>Оплата и доставка</Link>
     </li>
     <li>
     <Link to='/shop'>Каталог</Link>

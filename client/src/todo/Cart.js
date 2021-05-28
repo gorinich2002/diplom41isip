@@ -42,20 +42,20 @@ function ProductPosition(props) {
   const [isVisible, Hide] = useState(true);
   const store = useContext(ReduxMainContext);
   function deleteListenr(id) {
-    store.dispatch(deleteProductIntoCartAction(id));
+    store.dispatch(deleteProductIntoCartAction(name));
     Hide(false);
   }
 
   return (
     <tr className="cartTable__row">
       <td>
-        <img className="cart__img" src={`./images/${imgname}.jpg`} />
+        <img className="cart__img" src={imgname} />
       </td>
       <td>{name}</td>
 
       <td>{price}</td>
       <td>{count}</td>
-      <td>{count*price}</td>
+      <td>{(count*price).toFixed(2)}</td>
       <td className='btnTd'>
         <DeleteBtn deleteListenr={deleteListenr} productId={id} />
       </td>

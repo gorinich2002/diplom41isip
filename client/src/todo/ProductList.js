@@ -69,9 +69,9 @@ function ProductCard(props) {
   return (
     <>
       <div className="productCard">
-        <img src={`./images/${elem.imgname}.jpg`} />
+        <img src={elem.imgname} />
         <h2>
-          {elem.name} <span className="productPrice">{elem.price}₽</span>
+          {elem.name} <span className="productPrice"><br/>{elem.price}₽</span>
         </h2>
         <p>{elem.desc}</p>
 
@@ -109,13 +109,7 @@ function ProductCard(props) {
             Добавить в корзину
           </div>
         )}
-        <div
-          onClick={() => {
-            console.log(contextStore.getState());
-          }}
-        >
-          logs
-        </div>
+       
       </div>
     </>
   );
@@ -125,6 +119,7 @@ function ProductList(props) {
   const prodList = props.prodList;
   const searchValue = props.searchValue;
   const order = prodList.map((elem) => {
+    console.log(elem)
     if(elem.name.toLowerCase().indexOf(searchValue.toLowerCase())!=-1){
     return (
       <>
