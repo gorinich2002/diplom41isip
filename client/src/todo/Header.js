@@ -49,9 +49,9 @@ function Header() {
     <li>
     <Link to='/cart'>Корзина <div id='cartCounter'>{cartCount}</div></Link>
     </li>
-    <li>
+    {/* <li>
     <Link to='/howToPay'>Вход</Link>
-    </li>
+    </li> */}
       </ul>
     </header>
   );

@@ -69,13 +69,16 @@ function ProductCard(props) {
   return (
     <>
       <div className="productCard">
+        <div>
         <img src={elem.imgname} />
         <h2>
           {elem.name} <span className="productPrice">{elem.price}₽</span>
         </h2>
+        </div>
         {/* <p>{elem.desc}</p> */}
 
-        <div className="countBlock">
+      <div>
+      <div className="countBlock">
           <div
             className="plusBtn countBtn"
             onClick={decrementCount}
@@ -109,6 +112,7 @@ function ProductCard(props) {
             Добавить в корзину
           </div>
         )}
+      </div>
        
       </div>
     </>
