@@ -188,19 +188,37 @@ class Root extends React.Component {
   constructor(props) {
     super(props);
     this.searchCahgeHandler = this.searchCahgeHandler.bind(this);
-    this.state = { searchValue: "" };
+    this.changeCheckListener = this.changeCheckListener.bind(this);
+
+    
+    this.state = { searchValue: "", vegetables: true,
+    milk: true,
+    bread: true,};
   }
 
   searchCahgeHandler(e) {
     this.setState({ searchValue: e.target.value });
   }
+  changeCheckListener(e) {
+    const target  = e.target;
+    const checked = target.checked;
+    // const newState = filterState;
+    // newState[target.value] = !filterState[target.value];
+    // setFilterState(newState)
+    // console.log(filterState)
+    // setRender(!render)
+    this.setState({ [target.value]: checked });
+  
 
+  }
   render() {
     return (
       <BrowserRouter>
         <Header key="header" />
         <main>
           <Menu
+          filterState = {{milk: this.state.milk,bread: this.state.bread,vegetables: this.state.vegetables,}}
+          changeCheckListener = {this.changeCheckListener}
             key="menu"
             searchCahgeHandler={this.searchCahgeHandler}
             value={this.state.searchValue}
