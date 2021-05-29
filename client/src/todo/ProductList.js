@@ -121,10 +121,11 @@ function ProductCard(props) {
 
 function ProductList(props) {
   const prodList = props.prodList;
+  const filterState = props.filterState;
   const searchValue = props.searchValue;
   const order = prodList.map((elem) => {
     console.log(elem)
-    if(elem.name.toLowerCase().indexOf(searchValue.toLowerCase())!=-1){
+    if(elem.name.toLowerCase().indexOf(searchValue.toLowerCase())!=-1 && filterState[elem.category]){
     return (
       <>
        

@@ -1,0 +1,9 @@
+.filterCheckBox{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.searchLi{
+    margin-bottom: 40px;
+}

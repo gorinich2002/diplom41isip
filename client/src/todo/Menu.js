@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import { useEffect, useState } from "react";
+import "./MenuStyle.css";
 
 // let menuList = [
 //     {text: 'Категории'},
@@ -32,17 +33,17 @@ const filterState = props.filterState;
   
   return (
     <>
-      <li>
+      <li className='filterCheckBox'>
         {" "}
         <input checked={filterState.vegetables} id="vegetables" type="checkbox" name="vegetables" value="vegetables" onChange={changeCheckListener}/>{" "}
         <label for="vegetables">Овощи</label>
       </li>
-      <li>
+      <li className='filterCheckBox'>
         {" "}
         <input checked={filterState.milk} id="milk"  type="checkbox" name="milk" value="milk" onChange={changeCheckListener}/>{" "}
         <label for="milk">Молочная продукция</label>
       </li>
-      <li>
+      <li className='filterCheckBox'>
         {" "}
         <input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>{" "}
         <label for="bread">Хлебобулочные изделия</label>
