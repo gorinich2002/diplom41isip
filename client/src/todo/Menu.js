@@ -12,6 +12,9 @@ function CategoryCheckBox(props) {
     milk: true,
     bread: true,
   });
+
+  const [render, setRender] = useState(true);
+
   function changeCheckListener(e) {
     const target  = e.target;
     const checked = target.checked;
@@ -19,10 +22,14 @@ function CategoryCheckBox(props) {
     newState[target.value] = !filterState[target.value];
     setFilterState(newState)
     console.log(filterState)
+    setRender(!render)
   
 
   }
-  useEffect(()=>{})
+
+
+
+
 
   
   return (
