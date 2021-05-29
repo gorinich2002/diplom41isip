@@ -15,16 +15,22 @@
     padding: 10px;
     border: 1px solid black;
     width: 280px;
-    height: 340px;
+   position: relative;
+    overflow: hidden;
     margin: 10px;
+    text-align: center;
 }
 
-
+.productCard img{
+    min-height: 160px;
+}
 .countBlock{
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 1px;
+   
+    bottom: 10px;
 }
 .plusBtn{
  

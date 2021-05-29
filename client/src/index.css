@@ -15,7 +15,7 @@ input {
   padding: 0; }
 
 #root {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', Roboto, sans-serif; }
 
 a {
   text-decoration: none;
@@ -32,7 +32,7 @@ ul {
   align-items: center;
   height: 8vh; }
   #header .headerUl {
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Raleway', Roboto, sans-serif; }
   #header ul {
     display: flex;
     justify-content: space-around;

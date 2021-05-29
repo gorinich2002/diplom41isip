@@ -71,9 +71,9 @@ function ProductCard(props) {
       <div className="productCard">
         <img src={elem.imgname} />
         <h2>
-          {elem.name} <span className="productPrice"><br/>{elem.price}₽</span>
+          {elem.name} <span className="productPrice">{elem.price}₽</span>
         </h2>
-        <p>{elem.desc}</p>
+        {/* <p>{elem.desc}</p> */}
 
         <div className="countBlock">
           <div
