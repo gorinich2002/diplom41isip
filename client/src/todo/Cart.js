@@ -67,9 +67,10 @@ function Cart(props) {
   const store = useContext(ReduxMainContext);
 
   let productListFromStore = store.getState().cart;
-
+  let totalPrice = 0;
   const ProductPositionList = productListFromStore.map((product) => {
-    console.log(product.product);
+   
+    totalPrice +=product.product.price*product.count;
     return (
       <ProductPosition
         name={product.product.name}
@@ -100,6 +101,21 @@ function Cart(props) {
             </td>
           </tr>
           {ProductPositionList}
+
+          <tr className="cartTable__row">
+      <td>
+        
+      </td>
+      <td>Итого:</td>
+      <td></td>
+
+     
+      <td></td>
+      <td>{totalPrice}</td>
+      <td >
+        
+      </td>
+    </tr>
         </tbody>
       </table>
       <div className='orderBtn'><Link to='/confirm'>Оформить заказ</Link></div>
