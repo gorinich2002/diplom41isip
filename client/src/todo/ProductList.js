@@ -182,18 +182,20 @@ function ProductList(props) {
   function setPugNum(pugNum) {
     setPugCount(pugNum);
   }
-
-  const order = prodList.map((elem) => {
+  console.log(prodList  )
+  const order = [];
+  for(let i = 0; i<prodList.length; i++){
+ 
 
     if (
-      elem.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
-      filterState[elem.category]
+      prodList[i].name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
+      filterState[ prodList[i].category]
     ) {
-      return (
+      order.push (
         <>
           <ProductCard
-            product={elem}
-            key={elem.name}
+            product={ prodList[i]}
+            key={ prodList[i].name}
             // name={elem.name}
             // imgname={elem.imgname}
             // desc={elem.desc}
@@ -201,7 +203,7 @@ function ProductList(props) {
         </>
       );
     }
-  });
+  };
   const pugLen = Math.ceil(order.length / 9);
   return (
     <>
