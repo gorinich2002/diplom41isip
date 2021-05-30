@@ -13,14 +13,14 @@ function Pagination(props) {
   // const [pugNum, setpugNum] = useState(1)
   // const pugNum = props.pugNum;
   const pugCount = props.pugCount;
- 
-
+  const pugNum = Math.ceil(props.order.length / 9);
+  console.log(props.order)
   //const [incrementPugCount , decrementPugCount, setPugNum] =  [props.incrementPugCount , props.decrementPugCount, props.setPugNum]
   const incrementPugCount= props.incrementPugCount
   const decrementPugCount = props.decrementPugCount
   const setPugNum = props.setPugNum
   const lis = [];
-  const pugNum = Math.ceil(props.order.length / 9);
+  
   for (let i = 1; i <= pugNum; i++) {
     if (i == pugCount) {
       lis.push(
@@ -212,6 +212,7 @@ function ProductList(props) {
         <div className="pug">
           <Pagination
             pugNum={pugLen}
+            order = {order}
             pugCount={pugCount + 1}
             incrementPugCount={incrementPugCount}
             decrementPugCount = {decrementPugCount}
