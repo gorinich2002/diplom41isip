@@ -10,14 +10,39 @@ import {
 // import ReduxMainContext from '../index'
 
 function Pagination(props) {
-  // const [pagNum, setPagNum] = useState(1)
-  const pagNum = props.pagNum;
+  // const [pugNum, setpugNum] = useState(1)
+  // const pugNum = props.pugNum;
+  const pugCount = props.pugCount;
+ 
+
+  //const [incrementPugCount , decrementPugCount, setPugNum] =  [props.incrementPugCount , props.decrementPugCount, props.setPugNum]
+  const incrementPugCount= props.incrementPugCount
+  const decrementPugCount = props.decrementPugCount
+  const setPugNum = props.setPugNum
+  const lis = [];
+  const pugNum = Math.ceil(props.order.length / 9);
+  for (let i = 1; i <= pugNum; i++) {
+    if (i == pugCount) {
+      lis.push(
+        <li className="pugBtn activePug" onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
+          {i}
+        </li>
+      );
+    } else {
+      lis.push(
+        <li className="pugBtn"  onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
+          {i}
+        </li>
+      );
+    }
+  }
+ 
   return (
     <ul>
-      <li className='pugBtn'>{"<"}</li>
-      <li>{props.pagLen}</li>
+      <li className="pugBtn" onClick={decrementPugCount}>{"<"}</li>
+      {lis}
 
-      <li className='pugBtn'>{">"}</li>
+      <li className="pugBtn" onClick={incrementPugCount}>{">"}</li>
     </ul>
   );
 }
@@ -135,8 +160,31 @@ function ProductList(props) {
   const prodList = props.prodList;
   const filterState = props.filterState;
   const searchValue = props.searchValue;
+
+  
+
+  const [pugCount, setPugCount] = useState(0);
+
+  function incrementPugCount() {
+    if (pugCount < pugLen-1) {
+      setPugCount(pugCount+1);
+    }
+   
+
+  }
+  function decrementPugCount() {
+    if (pugCount > 0) {
+      setPugCount(pugCount-1);
+    }
+    console.log(pugCount)
+  }
+
+  function setPugNum(pugNum) {
+    setPugCount(pugNum);
+  }
+
   const order = prodList.map((elem) => {
-    console.log(elem);
+
     if (
       elem.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
       filterState[elem.category]
@@ -154,17 +202,24 @@ function ProductList(props) {
       );
     }
   });
-
+  const pugLen = Math.ceil(order.length / 9);
   return (
     <>
-    <div id="productViewer">
-      <div className='flex'>{order.slice(0,9)}</div>
-      <div className='pug'>
-      <Pagination pagLen = {prodList.length}/>
+      <div id="productViewer">
+        <div className="flex">
+          {order.slice(pugCount * 9, (pugCount + 1) * 9)}
+        </div>
+        <div className="pug">
+          <Pagination
+            pugNum={pugLen}
+            pugCount={pugCount + 1}
+            incrementPugCount={incrementPugCount}
+            decrementPugCount = {decrementPugCount}
+            setPugNum = {setPugNum}
+          />
+        </div>
       </div>
-    </div>
-    
-     </>
+    </>
   );
 }
 export default ProductList;

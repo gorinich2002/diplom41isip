@@ -127,3 +127,7 @@
     background-color: rgb(219, 219, 219);
     margin: 10px;
 }
+.activePug{
+    background-color: gray;
+    color: white;
+}
