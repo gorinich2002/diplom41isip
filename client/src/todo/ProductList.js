@@ -9,6 +9,19 @@ import {
 
 // import ReduxMainContext from '../index'
 
+function Pagination(props) {
+  // const [pagNum, setPagNum] = useState(1)
+  const pagNum = props.pagNum;
+  return (
+    <ul>
+      <li className='pugBtn'>{"<"}</li>
+      <li>{props.pagLen}</li>
+
+      <li className='pugBtn'>{">"}</li>
+    </ul>
+  );
+}
+
 function ProductCard(props) {
   const [inACart, changeCart] = useState(false);
 
@@ -39,7 +52,7 @@ function ProductCard(props) {
     if (!contextStore.getState().cart.find(isThisElemInCart)) {
       let value = e.target.value;
 
-      setCount( +e.target.value);
+      setCount(+e.target.value);
     }
   }
 
@@ -70,50 +83,49 @@ function ProductCard(props) {
     <>
       <div className="productCard">
         <div>
-        <img src={elem.imgname} />
-        <h2>
-          {elem.name} <span className="productPrice">{elem.price}₽</span>
-        </h2>
+          <img src={elem.imgname} />
+          <h2>
+            {elem.name} <span className="productPrice">{elem.price}₽</span>
+          </h2>
         </div>
         {/* <p>{elem.desc}</p> */}
 
-      <div>
-      <div className="countBlock">
-          <div
-            className="plusBtn countBtn"
-            onClick={decrementCount}
-            style={inACart ? { display: "none" } : null}
-          >
-            -
-          </div>
+        <div>
+          <div className="countBlock">
+            <div
+              className="plusBtn countBtn"
+              onClick={decrementCount}
+              style={inACart ? { display: "none" } : null}
+            >
+              -
+            </div>
 
-          <input
-            type="number"
-            className="countInput"
-            value={count}
-            onChange={changeCountInput}
-            onBlur={checkMinusValueBlur}
-          ></input>
+            <input
+              type="number"
+              className="countInput"
+              value={count}
+              onChange={changeCountInput}
+              onBlur={checkMinusValueBlur}
+            ></input>
 
-          <div
-            className=" minusBtn countBtn"
-            onClick={incrementCount}
-            style={inACart ? { display: "none" } : null}
-          >
-            +
+            <div
+              className=" minusBtn countBtn"
+              onClick={incrementCount}
+              style={inACart ? { display: "none" } : null}
+            >
+              +
+            </div>
           </div>
+          {inACart ? (
+            <div className="cardBtn deleteBtn" onClick={deleteBtnListener}>
+              Убрать товар из корзины
+            </div>
+          ) : (
+            <div className="cardBtn confirmBtn" onClick={addBtnListener}>
+              Добавить в корзину
+            </div>
+          )}
         </div>
-        {inACart ? (
-          <div className="cardBtn deleteBtn" onClick={deleteBtnListener}>
-            Убрать товар из корзины
-          </div>
-        ) : (
-          <div className="cardBtn confirmBtn" onClick={addBtnListener}>
-            Добавить в корзину
-          </div>
-        )}
-      </div>
-       
       </div>
     </>
   );
@@ -124,24 +136,35 @@ function ProductList(props) {
   const filterState = props.filterState;
   const searchValue = props.searchValue;
   const order = prodList.map((elem) => {
-    console.log(elem)
-    if(elem.name.toLowerCase().indexOf(searchValue.toLowerCase())!=-1 && filterState[elem.category]){
-    return (
-      <>
-       
-        <ProductCard
-          product={elem}
-          key={elem.name}
-          // name={elem.name}
-          // imgname={elem.imgname}
-          // desc={elem.desc}
-        ></ProductCard>
-        
-      </>
-    );
+    console.log(elem);
+    if (
+      elem.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
+      filterState[elem.category]
+    ) {
+      return (
+        <>
+          <ProductCard
+            product={elem}
+            key={elem.name}
+            // name={elem.name}
+            // imgname={elem.imgname}
+            // desc={elem.desc}
+          ></ProductCard>
+        </>
+      );
     }
   });
 
-  return <div id="productViewer">{order}</div>;
+  return (
+    <>
+    <div id="productViewer">
+      <div className='flex'>{order.slice(0,9)}</div>
+      <div className='pug'>
+      <Pagination pagLen = {prodList.length}/>
+      </div>
+    </div>
+    
+     </>
+  );
 }
 export default ProductList;

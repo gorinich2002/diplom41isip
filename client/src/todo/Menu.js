@@ -28,7 +28,7 @@ const filterState = props.filterState;
 
   // }
   const changeCheckListener = props.changeCheckListener;
-
+console.log(filterState)
 
   
   return (
@@ -48,6 +48,16 @@ const filterState = props.filterState;
         <input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>{" "}
         <label for="bread">Хлебобулочные изделия</label>
       </li>
+      <li className='filterCheckBox'>
+        {" "}
+        <input checked={filterState.meat} id = 'meat' type="checkbox" name="meat" value="meat" onChange={changeCheckListener}/>{" "}
+        <label for="meat">Мясные изделия</label>
+      </li>
+      {/* <li className='filterCheckBox'>
+        {" "}
+        <input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>{" "}
+        <label for="bread">Хлебобулочные изделия</label>
+      </li> */}
     </>
   );
 }

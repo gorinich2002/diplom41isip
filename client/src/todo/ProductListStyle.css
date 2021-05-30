@@ -77,12 +77,26 @@
 }
 .deleteBtn{
     background-color: #791818;
+    padding: 1px;
+    width: 100%;
 }
 #productViewer{
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 90vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+   
+}
+
+.flex{
+
+    
+    width: 100%;
+    display: flex;
+   
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -90,4 +104,26 @@
     color: #791818;
     font-style: bold;
     margin-left: 20px;
+}
+
+
+.pug ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.pug{
+    width: 100%;
+    text-align: center;
+}
+.pugBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+    margin: 10px;
 }

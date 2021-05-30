@@ -39,7 +39,8 @@ class Root extends React.Component {
     
     this.state = { searchValue: "", vegetables: true,
     milk: true,
-    bread: true,};
+    bread: true,
+    meat:true};
   }
 
   searchCahgeHandler(e) {
@@ -63,7 +64,7 @@ class Root extends React.Component {
         <Header key="header" />
         <main>
           <Menu
-          filterState = {{milk: this.state.milk,bread: this.state.bread,vegetables: this.state.vegetables,}}
+          filterState = {{milk: this.state.milk,bread: this.state.bread,vegetables: this.state.vegetables,meat: this.state.meat}}
           changeCheckListener = {this.changeCheckListener}
             key="menu"
             searchCahgeHandler={this.searchCahgeHandler}
@@ -72,7 +73,7 @@ class Root extends React.Component {
           <Switch>
             <Route path="/shop">
               <ProductList
-               filterState = {{milk: this.state.milk,bread: this.state.bread,vegetables: this.state.vegetables,}}
+               filterState = {{milk: this.state.milk,bread: this.state.bread,vegetables: this.state.vegetables,meat: this.state.meat}}
                 searchValue={this.state.searchValue}
                 prodList={prodList}
               />

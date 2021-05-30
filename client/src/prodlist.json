@@ -103,5 +103,231 @@
     "price": 269.9,
     "id": 14,
     "category": "vegetables"
+  },
+
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
+    "price": 199,
+    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "id": 15,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
+    "price": 199,
+    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "id": 16,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
+    "price": 188.99,
+    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "id": 17,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
+    "price": 168.99,
+    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "id": 18,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
+    "price": 199,
+    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "id": 19,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
+    "price": 229,
+    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "id": 20,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
+    "price": 229,
+    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "id": 21,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
+    "price": 217.55,
+    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "id": 22,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
+    "price": 188.99,
+    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "id": 23,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
+    "price": 229,
+    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "id": 24,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "id": 25,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "id": 26,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
+    "price": 217.55,
+    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "id": 27,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
+    "price": 188.99,
+    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "id": 28,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367860001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 1,5%, 973мл БЗМЖ",
+    "category": "milk",
+    "id": 29
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
+    "category": "bread",
+    "id": 30,
+    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
+    "category": "bread",
+    "id": 31,
+    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
+    "category": "bread",
+    "id": 32,
+    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
+    "category": "bread",
+    "id": 33,
+    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
+    "category": "bread",
+    "id": 34,
+    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
+    "category": "bread",
+    "id": 35,
+    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
+    "category": "bread",
+    "id": 36,
+    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
+    "category": "bread",
+    "id": 37,
+    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
+    "category": "bread",
+    "id": 38,
+    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
+    "category": "bread",
+    "id": 39,
+    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
+    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
+    "id": 40,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
+    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
+    "id": 41,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
+    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
+    "id": 42,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
+    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
+    "id": 43,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
+    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
+    "id": 44,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
+    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
+    "id": 45,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
+    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
+    "id": 46,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
+    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
+    "id": 47,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
+    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
+    "id": 48,
+    "category": "meat"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
+    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
+    "id": 49,
+    "category": "meat"
   }
 ]
