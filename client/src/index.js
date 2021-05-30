@@ -87,7 +87,7 @@ class Root extends React.Component {
             <Route path="/confirm">
               <OrderConfirm />
             </Route>
-            <Redirect to="/"></Redirect>
+            <Redirect to="/shop"></Redirect>
           </Switch>
         </main>
       </BrowserRouter>
