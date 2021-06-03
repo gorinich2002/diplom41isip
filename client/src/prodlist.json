@@ -213,60 +213,79 @@
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
     "category": "bread",
+    "price": 53,
     "id": 30,
     "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
     "category": "bread",
+    "price": 52,
+
     "id": 31,
     "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
     "category": "bread",
+    "price": 63,
+
     "id": 32,
     "name": "Тортилья FINE LIFE пшеничная, 250 г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
     "category": "bread",
+    "price": 60,
+
     "id": 33,
     "name": "Тортилья FINE LIFE пшеничная, 250 г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
     "category": "bread",
+    "price": 62,
+
     "id": 34,
     "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
     "category": "bread",
+    "price": 80,
+
     "id": 35,
     "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
     "category": "bread",
+    "price": 40,
+
     "id": 36,
     "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
     "category": "bread",
+    "price": 70,
+
     "id": 37,
     "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
     "category": "bread",
+    "price": 60,
+
     "id": 38,
     "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
     "category": "bread",
+    "price": 55,
+
     "id": 39,
     "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
   },
@@ -274,60 +293,70 @@
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
     "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
     "id": 40,
-    "category": "meat"
+    "category": "meat",
+    "price": 260
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
     "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
     "id": 41,
-    "category": "meat"
+    "category": "meat",
+    "price": 252
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
     "name": "Карбонад Metro Chef Российский нарезка, 500 г",
     "id": 42,
-    "category": "meat"
+    "category": "meat",
+    "price": 310
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
     "name": "Карбонад Metro Chef Российский нарезка, 500 г",
     "id": 43,
-    "category": "meat"
+    "category": "meat",
+    "price": 234
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
     "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
     "id": 44,
-    "category": "meat"
+    "category": "meat",
+    "price": 275
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
     "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
     "id": 45,
-    "category": "meat"
+    "category": "meat",
+    "price": 268
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
     "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
     "id": 46,
-    "category": "meat"
+    "category": "meat",
+    "price": 322
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
     "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
     "id": 47,
-    "category": "meat"
+    "category": "meat",
+    "price": 311
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
     "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
     "id": 48,
-    "category": "meat"
+    "category": "meat",
+    "price": 316
   },
   {
     "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
     "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
     "id": 49,
-    "category": "meat"
+    "category": "meat",
+    "price": 864
   }
 ]

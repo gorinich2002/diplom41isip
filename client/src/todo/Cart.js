@@ -111,7 +111,7 @@ function Cart(props) {
 
      
       <td></td>
-      <td>{totalPrice}</td>
+      <td>{totalPrice.toFixed(2)}</td>
       <td >
         
       </td>

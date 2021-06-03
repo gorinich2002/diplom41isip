@@ -14,6 +14,8 @@ import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
 import Cart from "./todo/Cart";
 import About from "./todo/About";
+import LoginForm from "./todo/LoginForm";
+
 import OrderConfirm from "./todo/OrderConfirm";
 import prodList from './prodlist.json';
 
@@ -86,6 +88,9 @@ class Root extends React.Component {
             </Route>
             <Route path="/confirm">
               <OrderConfirm />
+            </Route>
+            <Route path="/login">
+              <LoginForm />
             </Route>
             <Redirect to="/shop"></Redirect>
           </Switch>
