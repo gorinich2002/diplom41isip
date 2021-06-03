@@ -9,7 +9,8 @@
     "express": "^4.17.1",
     "express-validator": "^6.10.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.17",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.11.15",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "redux": "^4.1.0"
@@ -22,7 +23,7 @@
     "start": "index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run client\" \"npm run server\" "
   },
   "author": "",
   "license": "ISC"

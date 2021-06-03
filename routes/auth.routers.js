@@ -103,4 +103,18 @@ router.post(
   }
 );
 
+
+router.get(
+  "/login",
+ 
+  async (req, res) => {
+    try {
+     return 'asd'
+    } catch (e) {
+      res.status(500).json({ message: "Error, reload your page" });
+      console.log(e);
+    }
+  }
+);
+
 module.exports = router;
