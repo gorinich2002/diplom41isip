@@ -10,7 +10,7 @@ import { AuthContext } from "../context/AuthContext";
 
 
 
-function LoginForm(prop) {
+function LoginForm(props) {
   const { loading, error, request } = useHttp();
     const auth = useContext(AuthContext);
     const loginHandler = async ()=>{
@@ -48,7 +48,8 @@ function LoginForm(prop) {
   }
 
 
-  
+  if(!props.isAuthenticated){
+    
   return (
     <div id="cartViewer">
       <h1>Вход</h1>
@@ -95,7 +96,9 @@ function LoginForm(prop) {
         </div>
       </form>
     </div>
-  );
+  )}else{
+    return 1
+  };
 }
 
 export default LoginForm;
