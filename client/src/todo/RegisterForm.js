@@ -13,8 +13,13 @@ function RegisterForm(prop) {
            
             const data = await request("/api/auth/register", "POST", {...formData})
            
-        } catch (error) {
-            
+        } catch (e) {
+        
+            if(e.name != 'SyntaxError'){
+                alert(e.message)
+            }else{
+                alert('Что-то пошло не так. Попробуйте снова')
+            }
         }
     }
   const store = useContext(ReduxMainContext);

@@ -20,6 +20,13 @@ import RegisterForm from "./todo/RegisterForm";
 
 import OrderConfirm from "./todo/OrderConfirm";
 import prodList from './prodlist.json';
+import AuthContext from './context/AuthContext'
+
+
+// import {useAuth} from './hooks/auth.hook';
+// const  { login, logout, token, userId } = useAuth()
+
+
 
 
 const initialState = {

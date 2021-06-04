@@ -12,9 +12,14 @@ function LoginForm(prop) {
             console.log(formData);
             const data = await request("/api/auth/login", "POST", {...formData})
             if(error){
-              alert(data)
+              
             }
-        } catch (error) {
+        } catch (e) {
+          if(e.name != 'SyntaxError'){
+            alert(e.message)
+        }else{
+            alert('Что-то пошло не так. Попробуйте снова')
+        }
             
         }
     }
@@ -34,6 +39,9 @@ function LoginForm(prop) {
     console.log(formData);
     // form.submit();
   }
+
+
+
   return (
     <div id="cartViewer">
       <h1>Вход</h1>
