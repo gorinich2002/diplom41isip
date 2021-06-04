@@ -110,7 +110,7 @@ function ProductCard(props) {
         <div>
           <img src={elem.imgname} />
           <h2>
-            {elem.name} <span className="productPrice">{elem.price}₽</span>
+            {elem.name} <span className="productPrice">{elem.price.toFixed(2)}₽</span>
           </h2>
         </div>
         {/* <p>{elem.desc}</p> */}

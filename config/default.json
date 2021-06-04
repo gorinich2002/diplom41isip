@@ -1,5 +1,7 @@
 {
     "port":5000,
     "jwtSecret":"Diplom js pelevin",
-    "mongoUri":"mongodb+srv://ivan:diplom2021mern3315158252@cluster0.ug4vl.mongodb.net/app?retryWrites=true&w=majority"
+    "registerKey":"123123123",
+
+    "mongoUri":"mongodb+srv://roman:roman1234123@cluster0.u0qtx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
