@@ -6,12 +6,14 @@ import "./OrderConfirmStyle.css";
 import { useHttp } from "../hooks/http.hook";
 function LoginForm(prop) {
   const { loading, error, request } = useHttp();
-
+    
     const loginHandler = async ()=>{
         try {
             console.log(formData);
             const data = await request("/api/auth/login", "POST", {...formData})
-           
+            if(error){
+              alert(data)
+            }
         } catch (error) {
             
         }
