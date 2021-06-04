@@ -10,7 +10,7 @@ function RegisterForm(prop) {
 
     const loginHandler = async ()=>{
         try {
-            console.log(formData);
+           
             const data = await request("/api/auth/register", "POST", {...formData})
            
         } catch (error) {
@@ -21,6 +21,8 @@ function RegisterForm(prop) {
   const [formData, setFormData] = useState({
     login: "",
     password: "",
+    key: "",
+
   });
   function changeFormHandler(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -73,7 +75,7 @@ function RegisterForm(prop) {
               <td>
                 <input
                   onChange={changeFormHandler}
-                  value={formData.password}
+                  value={formData.key}
                   name="key"
                   type="password"
                 />
