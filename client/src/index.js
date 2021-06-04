@@ -19,10 +19,10 @@ import RegisterForm from "./todo/RegisterForm";
 
 import OrderConfirm from "./todo/OrderConfirm";
 import prodList from "./prodlist.json";
-import AuthContext from "./context/AuthContext";
 
-// import {useAuth} from './hooks/auth.hook';
-// const  { login, logout, token, userId } = useAuth()
+import { AuthContext } from "./context/AuthContext";
+
+import { useAuth } from "./hooks/auth.hook";
 
 const initialState = {
   cart: [],
@@ -33,8 +33,11 @@ const store = createStore(mainShopReduser, initialState);
 export const ReduxMainContext = createContext(null);
 //vegetables
 
-
 function Root(props) {
+  const { token, userId, login, logout } = useAuth();
+
+  const isAuthenticated = !!token;
+
   const [filterState, setFilterState] = useState({
     searchValue: "",
     vegetables: true,
@@ -44,7 +47,6 @@ function Root(props) {
   });
 
   function searchCahgeHandler(e) {
-    
     setFilterState({ ...filterState, searchValue: e.target.value });
   }
   function changeCheckListener(e) {
@@ -55,58 +57,67 @@ function Root(props) {
     // setFilterState(newState)
     // console.log(filterState)
     // setRender(!render)
-    setFilterState({...filterState, [target.value]: checked });
+    setFilterState({ ...filterState, [target.value]: checked });
   }
 
   return (
-    <BrowserRouter>
-      <Header key="header" />
-      <main>
-        <Menu
-          filterState={{
-            milk: filterState.milk,
-            bread: filterState.bread,
-            vegetables: filterState.vegetables,
-            meat: filterState.meat,
-          }}
-          changeCheckListener={changeCheckListener}
-          key="menu"
-          searchCahgeHandler={searchCahgeHandler}
-          value={filterState.searchValue}
-        />
-        <Switch>
-          <Route path="/shop">
-            <ProductList
-              filterState={{
-                milk: filterState.milk,
-                bread: filterState.bread,
-                vegetables: filterState.vegetables,
-                meat: filterState.meat,
-              }}
-              searchValue={filterState.searchValue}
-              prodList={prodList}
-            />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/confirm">
-            <OrderConfirm />
-          </Route>
-          <Route path="/login">
-            <LoginForm />
-          </Route>
-          <Route path="/register">
-            <RegisterForm />
-          </Route>
-          <Redirect to="/shop"></Redirect>
-        </Switch>
-      
-      </main>
-    </BrowserRouter>
+    <AuthContext.Provider
+      value={{
+        login,
+        token,
+        logout,
+        userId,
+        isAuthenticated,
+      }}
+    >
+      <BrowserRouter>
+        <Header key="header" />
+        <main>
+          <Menu
+            filterState={{
+              milk: filterState.milk,
+              bread: filterState.bread,
+              vegetables: filterState.vegetables,
+              meat: filterState.meat,
+            }}
+            changeCheckListener={changeCheckListener}
+            key="menu"
+            searchCahgeHandler={searchCahgeHandler}
+            value={filterState.searchValue}
+          />
+          <Switch>
+            <Route path="/shop">
+              <ProductList
+                filterState={{
+                  milk: filterState.milk,
+                  bread: filterState.bread,
+                  vegetables: filterState.vegetables,
+                  meat: filterState.meat,
+                }}
+                searchValue={filterState.searchValue}
+                prodList={prodList}
+              />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/confirm">
+              <OrderConfirm />
+            </Route>
+            <Route path="/login">
+              <LoginForm isAuthenticated={isAuthenticated} />
+            </Route>
+            <Route path="/register">
+              <RegisterForm />
+            </Route>
+            <Redirect to="/shop"></Redirect>
+          </Switch>
+        </main>
+      </BrowserRouter>
+    </AuthContext.Provider>
   );
 }
 

@@ -4,13 +4,20 @@ import { Link } from "react-router-dom";
 import { ReduxMainContext } from "../index";
 import "./OrderConfirmStyle.css";
 import { useHttp } from "../hooks/http.hook";
+import { AuthContext } from "../context/AuthContext";
+  
+
+
+
+
 function LoginForm(prop) {
   const { loading, error, request } = useHttp();
-    
+    const auth = useContext(AuthContext);
     const loginHandler = async ()=>{
         try {
             console.log(formData);
             const data = await request("/api/auth/login", "POST", {...formData})
+            auth.login(data.token, data.userId)
             if(error){
               
             }
@@ -41,7 +48,7 @@ function LoginForm(prop) {
   }
 
 
-
+  
   return (
     <div id="cartViewer">
       <h1>Вход</h1>
