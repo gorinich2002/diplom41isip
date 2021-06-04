@@ -14,7 +14,7 @@ function Pagination(props) {
   // const pugNum = props.pugNum;
   const pugCount = props.pugCount;
   const pugNum = Math.ceil(props.order.length / 9);
-  console.log(props.order)
+ 
   //const [incrementPugCount , decrementPugCount, setPugNum] =  [props.incrementPugCount , props.decrementPugCount, props.setPugNum]
   const incrementPugCount= props.incrementPugCount
   const decrementPugCount = props.decrementPugCount
@@ -182,11 +182,11 @@ function ProductList(props) {
   function setPugNum(pugNum) {
     setPugCount(pugNum);
   }
-  console.log(prodList  )
+
   const order = [];
   for(let i = 0; i<prodList.length; i++){
- 
-
+   
+    
     if (
       prodList[i].name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
       filterState[ prodList[i].category]

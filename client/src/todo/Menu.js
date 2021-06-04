@@ -28,7 +28,7 @@ const filterState = props.filterState;
 
   // }
   const changeCheckListener = props.changeCheckListener;
-console.log(filterState)
+
 
   
   return (
