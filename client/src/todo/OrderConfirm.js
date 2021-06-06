@@ -23,9 +23,22 @@ function OrderConfirm(prop) {
         phone:formEls['phone'].value,
         surname:formEls['surname'].value,
 
-        mail:formEls['mail'].value
+        mail:formEls['mail'].value,
+        isSended: false
     }
+  //   const formData ={
+  //     cart:store.getState().cart,
+     
+  //     firstName:formEls['firstName'].value,
 
+  //     address:formEls['address'].value,
+
+  //     phone:formEls['phone'].value,
+  //     surname:formEls['surname'].value,
+
+  //     mail:formEls['mail'].value,
+  //     isSended: false
+  // }
 
    
     console.log(formData);
