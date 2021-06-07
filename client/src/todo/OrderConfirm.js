@@ -2,46 +2,59 @@ import { render } from "@testing-library/react";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ReduxMainContext } from "../index";
+import { useHttp } from "../hooks/http.hook";
+
 import "./OrderConfirmStyle.css";
 
-
 function OrderConfirm(prop) {
+  const store = useContext(ReduxMainContext);
 
-  const store =useContext(ReduxMainContext);
-
- 
+  const { loading, error, request } = useHttp();
   function sendOrder() {
     const form = document.getElementById("orderForm");
     const formEls = form;
-    const formData ={
-        cart:store.getState().cart,
-       
-        firstName:formEls['firstName'].value,
+    
+    const formData = {
+      isSended: false,
+      products: store.getState().cart,
 
-        address:formEls['address'].value,
+      clientData: {
+        firstName: formEls["firstName"].value,
 
-        phone:formEls['phone'].value,
-        surname:formEls['surname'].value,
+        address: formEls["address"].value,
 
-        mail:formEls['mail'].value,
-        isSended: false
-    }
-  //   const formData ={
-  //     cart:store.getState().cart,
-     
-  //     firstName:formEls['firstName'].value,
+        phone: formEls["phone"].value,
+        surname: formEls["surname"].value,
 
-  //     address:formEls['address'].value,
+        mail: formEls["mail"].value,
+      },
 
-  //     phone:formEls['phone'].value,
-  //     surname:formEls['surname'].value,
-
-  //     mail:formEls['mail'].value,
-  //     isSended: false
-  // }
-
+      // orders:[{type: Types.ObjectId, ref:'Orders'}]
+    };
+  
    
-    console.log(formData);
+    const loginHandler = async () => {
+      try {
+        console.log(formData);
+        const data = await request("/api/auth/order", "POST", { ...formData });
+       
+        if (error) {
+        }
+      } catch (e) {
+        if (e.name != "SyntaxError") {
+          alert(e.message);
+        } else {
+          alert("Что-то пошло не так. Попробуйте снова");
+        }
+      }
+      
+    };
+   
+    loginHandler();
+   
+
+
+  
     // form.submit();
   }
   return (

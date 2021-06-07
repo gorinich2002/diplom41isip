@@ -5,7 +5,32 @@ import { ReduxMainContext } from "../index";
 import "./OrderConfirmStyle.css";
 import { useHttp } from "../hooks/http.hook";
 import { AuthContext } from "../context/AuthContext";
-  
+
+
+
+
+
+
+
+
+
+
+
+function OrderList(props){
+  const orderList = props.orderList;
+
+
+
+  return(
+    
+    <div>
+      <h1>Заказы</h1>
+      {orderList+''}
+    </div>
+  )
+}
+
+
 
 
 
@@ -97,7 +122,9 @@ function LoginForm(props) {
       </form>
     </div>
   )}else{
-    return 1
+    return(
+      <OrderList orderList={[1,2,3,4]}></OrderList>
+    )
   };
 }
 

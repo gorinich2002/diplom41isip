@@ -106,6 +106,7 @@ function ProductCard(props) {
   // let desc = props.desc;
   return (
     <>
+    
       <div className="productCard">
         <div>
           <img src={elem.imgname} />
