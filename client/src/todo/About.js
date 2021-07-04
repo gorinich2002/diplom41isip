@@ -1,7 +1,4 @@
 import "./AboutStyle.css";
-
-
-
 function About() {
     return(
         <div className='aboutViever'>
@@ -11,9 +8,5 @@ function About() {
             <p>Доставка осуществляется нашей курьерской службой. После оформления заказа производится контрольный звонок, после чего ваш заказ будет собран и отправлен. Оплата заказа осуществляется при получении.</p>
         </div>
     )
-
-
 }
-
-
-export default About;
+export default About;   

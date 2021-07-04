@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const mongoose = require("mongoose");
-
+const auth = require("../middleware/auth.middleware")
 
 
 const { check, validationResult } = require("express-validator");
@@ -44,9 +44,9 @@ router.post(
   }
 );
 
-router.get(
-  "/order",
-  
+router.post(
+  "/orders",
+  auth,
   async (req, res) => {
     try {
       
@@ -55,7 +55,7 @@ router.get(
 
       
 
-      const orders = await Order.find();
+      const orders = await Order.find({isSended: false});
 
       
    

@@ -10,17 +10,12 @@ import {
 // import ReduxMainContext from '../index'
 
 function Pagination(props) {
-  // const [pugNum, setpugNum] = useState(1)
-  // const pugNum = props.pugNum;
   const pugCount = props.pugCount;
   const pugNum = Math.ceil(props.order.length / 9);
- 
-  //const [incrementPugCount , decrementPugCount, setPugNum] =  [props.incrementPugCount , props.decrementPugCount, props.setPugNum]
-  const incrementPugCount= props.incrementPugCount
+   const incrementPugCount= props.incrementPugCount
   const decrementPugCount = props.decrementPugCount
   const setPugNum = props.setPugNum
   const lis = [];
-  
   for (let i = 1; i <= pugNum; i++) {
     if (i == pugCount) {
       lis.push(
@@ -36,7 +31,6 @@ function Pagination(props) {
       );
     }
   }
- 
   return (
     <ul>
       <li className="pugBtn" onClick={decrementPugCount}>{"<"}</li>
@@ -49,12 +43,10 @@ function Pagination(props) {
 
 function ProductCard(props) {
   const [inACart, changeCart] = useState(false);
-
   let elem = props.product;
   function isThisElemInCart(element) {
     return element.product.id == elem.id;
   }
-
   useEffect(() => {
     if (contextStore.getState().cart.find(isThisElemInCart)) {
       changeCart(true);
@@ -62,9 +54,7 @@ function ProductCard(props) {
       changeCart(false);
     }
   });
-
   const [count, setCount] = useState(1);
-
   const decrementCount = () => {
     if (count > 0) {
       setCount((count) => count - 1);
@@ -76,13 +66,10 @@ function ProductCard(props) {
   function changeCountInput(e) {
     if (!contextStore.getState().cart.find(isThisElemInCart)) {
       let value = e.target.value;
-
       setCount(+e.target.value);
     }
   }
-
   let contextStore = useContext(ReduxMainContext);
-
   function checkMinusValueBlur(e) {
     if (count < 0) {
       setCount(0);
@@ -91,19 +78,13 @@ function ProductCard(props) {
   function addBtnListener() {
     if (count > 0 && count != undefined) {
       contextStore.dispatch(addProductToCartAction(elem, +count));
-      // console.log(contextStore.getState().cart);
       changeCart(true);
     }
   }
   function deleteBtnListener() {
     contextStore.dispatch(deleteProductIntoCartAction(elem.id));
     changeCart(false);
-    // console.log(contextStore.getState().cart);
   }
-
-  // let imgname = props.imgname;
-  // let name = props.name;
-  // let desc = props.desc;
   return (
     <>
     
@@ -161,17 +142,11 @@ function ProductList(props) {
   const prodList = props.prodList;
   const filterState = props.filterState;
   const searchValue = props.searchValue;
-
-  
-
   const [pugCount, setPugCount] = useState(0);
-
   function incrementPugCount() {
     if (pugCount < pugLen-1) {
       setPugCount(pugCount+1);
     }
-   
-
   }
   function decrementPugCount() {
     if (pugCount > 0) {
@@ -179,15 +154,11 @@ function ProductList(props) {
     }
     console.log(pugCount)
   }
-
   function setPugNum(pugNum) {
     setPugCount(pugNum);
   }
-
   const order = [];
   for(let i = 0; i<prodList.length; i++){
-   
-    
     if (
       prodList[i].name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1 &&
       filterState[ prodList[i].category]
@@ -197,9 +168,6 @@ function ProductList(props) {
           <ProductCard
             product={ prodList[i]}
             key={ prodList[i].name}
-            // name={elem.name}
-            // imgname={elem.imgname}
-            // desc={elem.desc}
           ></ProductCard>
         </>
       );

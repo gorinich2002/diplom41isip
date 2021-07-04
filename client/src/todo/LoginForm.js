@@ -6,55 +6,56 @@ import "./OrderConfirmStyle.css";
 import { useHttp } from "../hooks/http.hook";
 import { AuthContext } from "../context/AuthContext";
 
-
-
-
-
-
-
-
-
-
-
-function OrderList(props){
+function OrderList(props) {
   const orderList = props.orderList;
-
-
-
-  return(
+  const { request } = useHttp();
+  const auth = useContext(AuthContext);
+  const loginHandler = async () => {
+    try {
+      const data = await request("/api/auth/orders", "POST",{
+        Authorization: `Bearer ${auth.token}`
+      });
+      console.log(data);
+     
+    } catch (e) {
+      if (e.name != "SyntaxError") {
+        alert(e.message);
+      } else {
+        alert("Что-то пошло не так. Попробуйте снова");
+      }
+    }
     
+  }; 
+  useEffect(()=>{
+    loginHandler()
+  },[])
+ 
+  return (
     <div>
       <h1>Заказы</h1>
-      {orderList+''}
+      {orderList + ""}
     </div>
-  )
+  );
 }
-
-
-
-
-
 
 function LoginForm(props) {
   const { loading, error, request } = useHttp();
-    const auth = useContext(AuthContext);
-    const loginHandler = async ()=>{
-        try {
-            console.log(formData);
-            const data = await request("/api/auth/login", "POST", {...formData})
-            auth.login(data.token, data.userId)
-            if(error){
-              
-            }
-        } catch (e) {
-          if(e.name != 'SyntaxError'){
-            alert(e.message)
-        }else{
-            alert('Что-то пошло не так. Попробуйте снова')
-        }
-            
-        }
+  const auth = useContext(AuthContext);
+  const loginHandler = async () => {
+    try {
+      console.log(formData);
+      const data = await request("/api/auth/login", "POST", { ...formData });
+      auth.login(data.token, data.userId);
+      if (error) {
+      }
+    } catch (e) {
+      if (e.name != "SyntaxError") {
+        alert(e.message);
+      } else {
+        alert("Что-то пошло не так. Попробуйте снова");
+      }
     }
+  };
   const store = useContext(ReduxMainContext);
   const [formData, setFormData] = useState({
     login: "",
@@ -72,60 +73,57 @@ function LoginForm(props) {
     // form.submit();
   }
 
-
-  if(!props.isAuthenticated){
-    
-  return (
-    <div id="cartViewer">
-      <h1>Вход</h1>
-      <form id="orderForm" className="orderForm" method="POST">
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <label>Логин</label>
-              </td>
-              <td>
-                <input
-                  onChange={changeFormHandler}
-                  value={formData.login}
-                  name="login"
-                  type="text"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Пароль</label>
-              </td>
-              <td>
-                <input
-                  onChange={changeFormHandler}
-                  value={formData.password}
-                  name="password"
-                  type="password"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        {/* <input name="cart" type="hidden" /> */}
-        <div
-          id="orderBtn"
-          colspan="2"
-          style={{ textAlign: "center" }}
-          onClick={loginHandler}
-          disabled={loading}
-        >
-          Войти
-        </div>
-      </form>
-    </div>
-  )}else{
-    return(
-      <OrderList orderList={[1,2,3,4]}></OrderList>
-    )
-  };
+  if (!props.isAuthenticated) {
+    return (
+      <div id="cartViewer">
+        <h1>Вход</h1>
+        <form id="orderForm" className="orderForm" method="POST">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label>Логин</label>
+                </td>
+                <td>
+                  <input
+                    onChange={changeFormHandler}
+                    value={formData.login}
+                    name="login"
+                    type="text"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Пароль</label>
+                </td>
+                <td>
+                  <input
+                    onChange={changeFormHandler}
+                    value={formData.password}
+                    name="password"
+                    type="password"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* <input name="cart" type="hidden" /> */}
+          <div
+            id="orderBtn"
+            colspan="2"
+            style={{ textAlign: "center" }}
+            onClick={loginHandler}
+            disabled={loading}
+          >
+            Войти
+          </div>
+        </form>
+      </div>
+    );
+  } else {
+    return <OrderList />;
+  }
 }
 
 export default LoginForm;

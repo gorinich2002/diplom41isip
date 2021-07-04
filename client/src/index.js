@@ -52,11 +52,6 @@ function Root(props) {
   function changeCheckListener(e) {
     const target = e.target;
     const checked = target.checked;
-    // const newState = filterState;
-    // newState[target.value] = !filterState[target.value];
-    // setFilterState(newState)
-    // console.log(filterState)
-    // setRender(!render)
     setFilterState({ ...filterState, [target.value]: checked });
   }
 
