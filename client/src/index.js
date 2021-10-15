@@ -68,7 +68,10 @@ function Root(props) {
       <BrowserRouter>
         <Header key="header" />
         <main>
-          <Menu
+         
+          <Switch>
+            <Route path="/shop">
+            <Menu
             filterState={{
               milk: filterState.milk,
               bread: filterState.bread,
@@ -80,8 +83,6 @@ function Root(props) {
             searchCahgeHandler={searchCahgeHandler}
             value={filterState.searchValue}
           />
-          <Switch>
-            <Route path="/shop">
               <ProductList
                 filterState={{
                   milk: filterState.milk,
@@ -94,6 +95,7 @@ function Root(props) {
               />
             </Route>
             <Route path="/cart">
+              
               <Cart />
             </Route>
             <Route path="/about">
