@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json({extended:true}))
 
-const PORT = config.get("port") || 5000;
+const PORT = process.env.PORT || config.get("port") || 5000;
 
 app.use('/api/auth', require('./routes/auth.routers'))
 app.use('/api/', require('./routes/order.routers'))
