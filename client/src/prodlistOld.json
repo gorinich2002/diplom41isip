@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Картофель Metro Chef Для запекания, 2,5 кг",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28225001001_01.png",
+    "price": 66.9,
+    "id": 0,
+    "category": "vegetables"
+  },
+  {
+    "name": "Картофель Metro Chef Для жарки, 2,5 кг",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28222001001_01.png",
+    "price": 63.56,
+    "id": 1,
+    "category": "vegetables"
+  },
+  {
+    "name": "Картофель Metro Chef Для варки, 2,5 кг",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28221001001_01.png",
+    "price": 66.9,
+    "id": 2,
+    "category": "vegetables"
+  },
+  {
+    "name": "Картофель Metro Chef Красный мытый, 2,5 кг",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_64865001001_01.png",
+    "price": 63.56,
+    "id": 3,
+    "category": "vegetables"
+  },
+  {
+    "name": "Картофель Metro Chef Белый мытый, 2,5 кг",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_38839001001_01.png",
+    "price": 64.9,
+    "id": 4,
+    "category": "vegetables"
+  },
+  {
+    "name": "Томат Metro Chef коктейльный на ветке, 500г",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_92212001001_01.png",
+    "price": 61.66,
+    "id": 5,
+    "category": "vegetables"
+  },
+  {
+    "name": "Огурцы БАКИНСКИЕ 250 г",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_376973001001_01.png",
+    "price": 64.9,
+    "id": 6,
+    "category": "vegetables"
+  },
+  {
+    "name": "Томаты розовые (азербайджан)",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537226001001_01.png",
+    "price": 61.66,
+    "id": 7,
+    "category": "vegetables"
+  },
+  {
+    "name": "Томаты сливка ардилес, 500г",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_378636001001_01.png",
+    "price": 59.9,
+    "id": 8,
+    "category": "vegetables"
+  },
+  {
+    "name": "Капуста цветная",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_209171001001_01.png",
+    "price": 56.91,
+    "id": 9,
+    "category": "vegetables"
+  },
+  {
+    "name": "Имбирь",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_509763001001_01.png",
+    "price": 259.9,
+    "id": 10,
+    "category": "vegetables"
+  },
+  {
+    "name": "ПЕРЕЦ ЧИЛИ КРАСНЫЙ ОСТРЫЙ МИНИ 100Г",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_124662001001_01.png",
+    "price": 246.9,
+    "id": 11,
+    "category": "vegetables"
+  },
+  {
+    "name": "Томаты МОЕ ЛЕТО Кумато мини, 250 г",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_185028001001_01.png",
+    "price": 129.9,
+    "id": 12,
+    "category": "vegetables"
+  },
+  {
+    "name": "Капуста брокколи",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_449508001001_01.png",
+    "price": 269.9,
+    "id": 13,
+    "category": "vegetables"
+  },
+  {
+    "name": "Перец желтый",
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_209187001001_01.png",
+    "price": 269.9,
+    "id": 14,
+    "category": "vegetables"
+  },
+
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
+    "price": 199,
+    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "id": 15,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
+    "price": 199,
+    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "id": 16,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
+    "price": 188.99,
+    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "id": 17,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
+    "price": 168.99,
+    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "id": 18,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
+    "price": 199,
+    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "id": 19,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
+    "price": 229,
+    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "id": 20,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
+    "price": 229,
+    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "id": 21,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
+    "price": 217.55,
+    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "id": 22,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
+    "price": 188.99,
+    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "id": 23,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
+    "price": 229,
+    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "id": 24,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "id": 25,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "id": 26,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
+    "price": 217.55,
+    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "id": 27,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
+    "price": 188.99,
+    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "id": 28,
+    "category": "milk"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367860001001_01.png",
+    "price": 229,
+    "name": "Молоко ARO 1,5%, 973мл БЗМЖ",
+    "category": "milk",
+    "id": 29
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
+    "category": "bread",
+    "price": 53,
+    "id": 30,
+    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
+    "category": "bread",
+    "price": 52,
+
+    "id": 31,
+    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
+    "category": "bread",
+    "price": 63,
+
+    "id": 32,
+    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
+    "category": "bread",
+    "price": 60,
+
+    "id": 33,
+    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
+    "category": "bread",
+    "price": 62,
+
+    "id": 34,
+    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
+    "category": "bread",
+    "price": 80,
+
+    "id": 35,
+    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
+    "category": "bread",
+    "price": 40,
+
+    "id": 36,
+    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
+    "category": "bread",
+    "price": 70,
+
+    "id": 37,
+    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
+    "category": "bread",
+    "price": 60,
+
+    "id": 38,
+    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
+    "category": "bread",
+    "price": 55,
+
+    "id": 39,
+    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
+    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
+    "id": 40,
+    "category": "meat",
+    "price": 260
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
+    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
+    "id": 41,
+    "category": "meat",
+    "price": 252
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
+    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
+    "id": 42,
+    "category": "meat",
+    "price": 310
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
+    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
+    "id": 43,
+    "category": "meat",
+    "price": 234
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
+    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
+    "id": 44,
+    "category": "meat",
+    "price": 275
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
+    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
+    "id": 45,
+    "category": "meat",
+    "price": 268
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
+    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
+    "id": 46,
+    "category": "meat",
+    "price": 322
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
+    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
+    "id": 47,
+    "category": "meat",
+    "price": 311
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
+    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
+    "id": 48,
+    "category": "meat",
+    "price": 316
+  },
+  {
+    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
+    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
+    "id": 49,
+    "category": "meat",
+    "price": 864
+  }
+]

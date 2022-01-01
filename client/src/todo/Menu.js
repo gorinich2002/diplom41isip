@@ -36,7 +36,7 @@ function Search(props) {
   return (
     <li className="searchLi">
       <i id="searchIcon" class="fas fa-search"></i>
-      <Input
+      <input
         id="menuSearch"
         type="text"
         onChange={props.searchCahgeHandler}

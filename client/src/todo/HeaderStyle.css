@@ -12,3 +12,6 @@
     background-color:#FF3347 ;
     font-size: 15px;
 }
+.container-fluid .nav-item{
+    margin-left: 30px;
+}

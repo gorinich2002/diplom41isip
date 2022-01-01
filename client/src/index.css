@@ -24,7 +24,7 @@ a {
 ul {
   list-style: none; }
 
-#header {
+/* #header {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -36,7 +36,7 @@ ul {
   #header ul {
     display: flex;
     justify-content: space-around;
-    width: 100%; }
+    width: 100%; } */
 
 main {
   display: flex;
@@ -44,26 +44,28 @@ main {
   height: 92vh; }
 
 #menu {
-  background-color: #252526;
+  background-color: #a71d2a;
   display: flex;
   justify-content: center;
   padding: 30px; }
 
 #searchIcon {
-  color: #333333;
+  color: white;
   margin-right: 7px; }
 
 .searchLi {
-  border: 1px solid gray;
+  border: 1px solid white;
   border-radius: 100px;
   padding: 7px;
-  background-color: #1E1E1E;
+  background-color: #a71d2a;
   display: flex;
   align-items: center; }
   .searchLi #menuSearch {
-    background-color: #1E1E1E;
+    background-color: #a71d2a;
     border: none;
     color: whitesmoke;
     font-size: 20px; }
-
+a :hover{
+  color: white !important;
+}
 /*# sourceMappingURL=index.css.map */

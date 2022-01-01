@@ -1,362 +1,262 @@
 [
   {
-    "name": "Картофель Metro Chef Для запекания, 2,5 кг",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28225001001_01.png",
-    "price": 66.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/495/220_200_1/4955e1c94ec0ad3177997cc7885d880e.jpg",
+    "name": "Курица домашняя, Халяль (зерновой откорм)",
+    "price": 270,
     "id": 0,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Картофель Metro Chef Для жарки, 2,5 кг",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28222001001_01.png",
-    "price": 63.56,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/d8f/220_200_1/d8ff1b93072664fa9cd4e1930bce55b6.png",
+    "name": "Грудка куриная филе",
+    "price": 325,
     "id": 1,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Картофель Metro Chef Для варки, 2,5 кг",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_28221001001_01.png",
-    "price": 66.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/800/220_200_1/800619f13d1ff5303aeb318df122af1f.png",
+    "name": "Бедро куриное филе",
+    "price": 355,
     "id": 2,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Картофель Metro Chef Красный мытый, 2,5 кг",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_64865001001_01.png",
-    "price": 63.56,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/187/220_200_1/1877535dda3af6a3fde13bebd2e22de8.png",
+    "name": "Цыплята корнишоны",
+    "price": 550,
     "id": 3,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Картофель Metro Chef Белый мытый, 2,5 кг",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_38839001001_01.png",
-    "price": 64.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/2f5/220_200_1/2f54b9be8248d4bd97f44411b8c03a87.jpg",
+    "name": "Тушка Утки потрошеная",
+    "price": 305,
     "id": 4,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Томат Metro Chef коктейльный на ветке, 500г",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_92212001001_01.png",
-    "price": 61.66,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/47e/220_200_1/47edda52255bdb30a367b1812fb04bfb.png",
+    "name": "Плечо индейки",
+    "price": 205,
     "id": 5,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Огурцы БАКИНСКИЕ 250 г",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_376973001001_01.png",
-    "price": 64.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/684/220_200_1/68449859e68d56e11bf8da7c6b60b86f.png",
+    "name": "Печень куриная",
+    "price": 179,
     "id": 6,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Томаты розовые (азербайджан)",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537226001001_01.png",
-    "price": 61.66,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/528/220_200_1/5283a2a6f5301325840199e1cd1a0d09.png",
+    "name": "Тушка утенка потрошеная",
+    "price": 239,
     "id": 7,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Томаты сливка ардилес, 500г",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_378636001001_01.png",
-    "price": 59.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/8fb/220_200_1/8fbdd0e3ec615ef50e49b3bfe80d0631.jpg",
+    "name": "Утиные окорочка",
+    "price": 585,
     "id": 8,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Капуста цветная",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_209171001001_01.png",
-    "price": 56.91,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/7ea/220_200_1/7ead723f06acc1a9cdf1841f68ccbd7c.png",
+    "name": "Желудки индейки",
+    "price": 299,
     "id": 9,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Имбирь",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_509763001001_01.png",
-    "price": 259.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/def/220_200_1/def1ccefac0a9385b90255ca870ffe02.png",
+    "name": "Бедро индейки филе",
+    "price": 410,
     "id": 10,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "ПЕРЕЦ ЧИЛИ КРАСНЫЙ ОСТРЫЙ МИНИ 100Г",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_124662001001_01.png",
-    "price": 246.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/28d/220_200_1/28dc379f8fdf3fec705a49038da873e5.jpg",
+    "name": "Сердца куриные",
+    "price": 215,
     "id": 11,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Томаты МОЕ ЛЕТО Кумато мини, 250 г",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_185028001001_01.png",
-    "price": 129.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/34f/220_200_1/34fe5f2b91b5873c9de9f957db66d109.png",
+    "name": "Курица тушка",
+    "price": 265,
     "id": 12,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Капуста брокколи",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_449508001001_01.png",
-    "price": 269.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/30f/220_200_1/30f36c618e0fcdc5f9f3aa39efc64f42.png",
+    "name": "Печень индейки",
+    "price": 329,
     "id": 13,
-    "category": "vegetables"
+    "caregory": "bird"
   },
   {
-    "name": "Перец желтый",
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_209187001001_01.png",
-    "price": 269.9,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/448/220_200_1/448126fe782f9d8ba53ef7943fc3427c.png",
+    "name": "Желудки куриные",
+    "price": 140,
     "id": 14,
-    "category": "vegetables"
+    "caregory": "bird"
   },
-
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
-    "price": 199,
-    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/900/220_200_1/900ae552c5c86d050fd259b40ca4068e.png",
+    "name": "Голень индейки",
+    "price": 220,
     "id": 15,
-    "category": "milk"
+    "caregory": "bird"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_145858001001_01.png",
-    "price": 199,
-    "name": "Напиток миндальный Alpro 1,1% 1л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/c97/220_200_1/c97e7bb10a9f2d419ddb44289cdfaf0f.png",
+    "name": "Грудка индейки филе",
+    "price": 400,
     "id": 16,
-    "category": "milk"
+    "caregory": "bird"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
-    "price": 188.99,
-    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/162/220_200_1/1622e79b610d67c7941fb338ffb9ef07.jpg",
+    "caregory": "pig",
     "id": 17,
-    "category": "milk"
+    "price": 319,
+    "name": "Карбонад свиной филе"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321344001001_01.png",
-    "price": 168.99,
-    "name": "Напиток миндальный Alpro без сахара 1,1% 1л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/uf/585/220_200_1/5852cebca30bc614df6742b5ef72c95d.jpg",
+    "caregory": "pig",
     "id": 18,
-    "category": "milk"
+    "price": 319,
+    "name": "Окорок свиной филе"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
-    "price": 199,
-    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/uf/840/220_200_1/8405366bda9e7162ce19e15ec0c21c1f.jpg",
+    "caregory": "pig",
     "id": 19,
-    "category": "milk"
+    "price": 490,
+    "name": "Шея свиная"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_321343001001_01.png",
-    "price": 229,
-    "name": "Напиток кокосовый с рисом ALPRO, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/cc8/220_200_1/cc8d03728b139d23002ad20d9feb919e.png",
+    "caregory": "pig",
     "id": 20,
-    "category": "milk"
+    "price": 309,
+    "name": "Лопатка свиная"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
-    "price": 229,
-    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/cf9/220_200_1/cf9fa3d9ff204adebb0e102b9554ea9c.jpg",
+    "caregory": "pig",
     "id": 21,
-    "category": "milk"
+    "price": 449,
+    "name": "Язык свиной"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_492820001001_01.png",
-    "price": 217.55,
-    "name": "Напиток ALPRO Almond с миндалем, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/965/220_200_1/96538281e8ae251e1591bc867bea5ffe.png",
+    "name": "Язык говяжий",
+    "price": 499,
     "id": 22,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
-    "price": 188.99,
-    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/4f1/220_200_1/4f18f9bf8491885c86aa276ea0fb5c4d.png",
+    "name": "Лопатка говяжья замороженная",
+    "price": 550,
     "id": 23,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_372757001001_01.png",
-    "price": 229,
-    "name": "Напиток ALPRO Coconut for Professionals соевый, 1 л",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/543/220_200_1/54306058e603c5a2c44c363cb724d924.jpg",
+    "name": "Говяжья вырезка замороженная",
+    "price": 1300,
     "id": 24,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
-    "price": 229,
-    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/7ce/220_200_1/7ce63c46fe30f86cc51adba206161c9d.png",
+    "name": "Сердце говяжье",
+    "price": 320,
     "id": 25,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367859001001_01.png",
-    "price": 229,
-    "name": "Молоко ARO 3,2%, 973 мл БЗМЖ",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/75b/220_200_1/75b9dc15e04416f9bc9922ea757f84ac.png",
+    "name": "Тазобедренный отруб говяжий замороженный",
+    "price": 585,
     "id": 26,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
-    "price": 217.55,
-    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/ab7/220_200_1/ab7e0d539d45e821bde07cb2657079a5.jpg",
+    "name": "Толстый край говяжий замороженный",
+    "price": 570,
     "id": 27,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_167265001001_01.png",
-    "price": 188.99,
-    "name": "RIOBA Молоко ультрапастеризованное 3,5%, 1л БЗМЖ",
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/3f9/220_200_1/3f93c0fea7c3b2a67839038b5645318f.jpg",
+    "name": "Котлетное мясо говядина охлажденное",
+    "price": 530,
     "id": 28,
-    "category": "milk"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_367860001001_01.png",
-    "price": 229,
-    "name": "Молоко ARO 1,5%, 973мл БЗМЖ",
-    "category": "milk",
-    "id": 29
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/278/220_200_1/278c91a903a8a5f6421ff58f229df5af.jpg",
+    "name": "Голяшка говяжья охлажденная",
+    "price": 570,
+    "id": 29,
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
-    "category": "bread",
-    "price": 53,
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/288/220_200_1/28813b71d21c4dccefc3f72434b3f159.jpeg",
+    "name": "Голяшка говяжья замороженная",
+    "price": 530,
     "id": 30,
-    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537891001001_01.png",
-    "category": "bread",
-    "price": 52,
-
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/fa5/220_200_1/fa547a3afcc0c0b153869230fb338dee.jpg",
+    "name": "Реберный отруб говяжий охлажденный",
+    "price": 550,
     "id": 31,
-    "name": "Тортилья пшеничная с отрубями FINE LIFE, 286г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
-    "category": "bread",
-    "price": 63,
-
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/d96/220_200_1/d96fb78736965a1b89ed3319d081b525.jpg",
+    "name": "Лопатка говяжья охлажденная",
+    "price": 650,
     "id": 32,
-    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537883001001_01.png",
-    "category": "bread",
-    "price": 60,
-
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/c0c/220_200_1/c0c816c480f57538241e301388cb84ae.jpg",
+    "name": "Тазобедренный отруб говяжий охлажденный",
+    "price": 660,
     "id": 33,
-    "name": "Тортилья FINE LIFE пшеничная, 250 г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
-    "category": "bread",
-    "price": 62,
-
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/96b/220_200_1/96b01b06047e83f398fa5f9a1bee279c.jpg",
+    "name": "Грудинка говяжья охлажденная",
+    "price": 635,
     "id": 34,
-    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_184620001001_01.png",
-    "category": "bread",
-    "price": 80,
-
+    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/b62/220_200_1/b623baceb0f4be598324d4f12de52e49.jpg",
+    "name": "Шея говяжья охлажденная",
+    "price": 630,
     "id": 35,
-    "name": "Тортилья Metro Chef пшеничная 20см 8шт 296г"
+    "caregory": "cow"
   },
   {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
-    "category": "bread",
-    "price": 40,
+    "imgSrc":"https://meat4u.ru/upload/resize_cache/iblock/1b6/220_200_1/1b6ceefd168fdb65c3a8ed5d46bfc631.jpg",
+    "name":"Барана туша",
+    "price": 320,
+    "id":36,
+    "caregory": "sheep"
 
-    "id": 36,
-    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_242865001001_01.png",
-    "category": "bread",
-    "price": 70,
-
-    "id": 37,
-    "name": "Булочка пшеничная BUN BOYS гамбургер с кунжутом, 6*50г"
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
-    "category": "bread",
-    "price": 60,
-
-    "id": 38,
-    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_537890001001_01.png",
-    "category": "bread",
-    "price": 55,
-
-    "id": 39,
-    "name": "Тортилья шпинатная FINE LIFE, 25см, 286г"
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
-    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
-    "id": 40,
-    "category": "meat",
-    "price": 260
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_285314001001_01.png",
-    "name": "Бекон сырокопченый Metro Chef нарезка, 500 г",
-    "id": 41,
-    "category": "meat",
-    "price": 252
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
-    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
-    "id": 42,
-    "category": "meat",
-    "price": 310
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_501913001001_01.png",
-    "name": "Карбонад Metro Chef Российский нарезка, 500 г",
-    "id": 43,
-    "category": "meat",
-    "price": 234
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
-    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
-    "id": 44,
-    "category": "meat",
-    "price": 275
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_414153001001_01.png",
-    "name": "Бекон копчено-вареный Metro Chef Венгерский, 500 г",
-    "id": 45,
-    "category": "meat",
-    "price": 268
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
-    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
-    "id": 46,
-    "category": "meat",
-    "price": 322
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_238078001001_01.png",
-    "name": "Бекон ВЕЛКОМ сырокопченый нарезка, 500 г",
-    "id": 47,
-    "category": "meat",
-    "price": 311
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
-    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
-    "id": 48,
-    "category": "meat",
-    "price": 316
-  },
-  {
-    "imgname": "https://cdn.metro-cc.ru/ru/ru_pim_55307001001_01.png",
-    "name": "Бекон Черкизово Премиум сырокопченый нарезка, 360г",
-    "id": 49,
-    "category": "meat",
-    "price": 864
   }
 ]
