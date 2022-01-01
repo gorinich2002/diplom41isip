@@ -10,23 +10,23 @@ const filterState = props.filterState;
     <>
       <li className='filterCheckBox'>
         
-        <Input checked={filterState.vegetables} id="vegetables" type="checkbox" name="vegetables" value="vegetables" onChange={changeCheckListener}/>
-        <Label for="vegetables">Овощи</Label>
+        <Input checked={filterState.pig} id="pig" type="checkbox" name="pig" value="pig" onChange={changeCheckListener}/>
+        <Label for="pig">Свинина</Label>
       </li>
       <li className='filterCheckBox'>
         
-        <Input checked={filterState.milk} id="milk"  type="checkbox" name="milk" value="milk" onChange={changeCheckListener}/>
-        <Label for="milk">Молочная продукция</Label>
+        <Input checked={filterState.cow} id="cow"  type="checkbox" name="cow" value="cow" onChange={changeCheckListener}/>
+        <Label for="cow">Говядина</Label>
       </li>
       <li className='filterCheckBox'>
         
-        <Input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>
-        <Label for="bread">Хлебобулочные изделия</Label>
+        <Input checked={filterState.sheep} id = 'sheep' type="checkbox" name="sheep" value="sheep" onChange={changeCheckListener}/>
+        <Label for="sheep">Баранина</Label>
       </li>
       <li className='filterCheckBox'>
         
-        <Input checked={filterState.meat} id = 'meat' type="checkbox" name="meat" value="meat" onChange={changeCheckListener}/>
-        <Label for="meat">Мясные изделия</Label>
+        <Input checked={filterState.bird} id = 'bird' type="checkbox" name="bird" value="bird" onChange={changeCheckListener}/>
+        <Label for="bird">Мясо птицы</Label>
       </li>
     
     </>

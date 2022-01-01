@@ -40,10 +40,10 @@ function Root(props) {
 
   const [filterState, setFilterState] = useState({
     searchValue: "",
-    vegetables: true,
-    milk: true,
-    bread: true,
-    meat: true,
+    pig: true,
+    cow: true,
+    sheep: true,
+    bird: true,
   });
 
   function searchCahgeHandler(e) {
@@ -73,10 +73,10 @@ function Root(props) {
             <Route path="/shop">
             <Menu
             filterState={{
-              milk: filterState.milk,
-              bread: filterState.bread,
-              vegetables: filterState.vegetables,
-              meat: filterState.meat,
+              pig: filterState.pig,
+              cow: filterState.cow,
+              sheep: filterState.sheep,
+              bird: filterState.bird,
             }}
             changeCheckListener={changeCheckListener}
             key="menu"
@@ -85,10 +85,10 @@ function Root(props) {
           />
               <ProductList
                 filterState={{
-                  milk: filterState.milk,
-                  bread: filterState.bread,
-                  vegetables: filterState.vegetables,
-                  meat: filterState.meat,
+                  pig: filterState.pig,
+                  cow: filterState.cow,
+                  sheep: filterState.sheep,
+                  bird: filterState.bird,
                 }}
                 searchValue={filterState.searchValue}
                 prodList={prodList}

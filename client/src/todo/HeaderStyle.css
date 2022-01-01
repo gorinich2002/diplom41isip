@@ -1,13 +1,14 @@
 #cartCounter{
     display: inline-block;
+    
     border: 2px solid white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 26px !important;
     overflow: hidden;
     text-align: center;
     padding: auto;
-    vertical-align:middle;
+    vertical-align:top;
+    padding-top: 0;
     color: white;
     background-color:#FF3347 ;
     font-size: 15px;

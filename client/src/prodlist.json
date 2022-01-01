@@ -1,262 +1,262 @@
 [
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/495/220_200_1/4955e1c94ec0ad3177997cc7885d880e.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/495/220_200_1/4955e1c94ec0ad3177997cc7885d880e.jpg",
     "name": "Курица домашняя, Халяль (зерновой откорм)",
     "price": 270,
     "id": 0,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/d8f/220_200_1/d8ff1b93072664fa9cd4e1930bce55b6.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/d8f/220_200_1/d8ff1b93072664fa9cd4e1930bce55b6.png",
     "name": "Грудка куриная филе",
     "price": 325,
     "id": 1,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/800/220_200_1/800619f13d1ff5303aeb318df122af1f.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/800/220_200_1/800619f13d1ff5303aeb318df122af1f.png",
     "name": "Бедро куриное филе",
     "price": 355,
     "id": 2,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/187/220_200_1/1877535dda3af6a3fde13bebd2e22de8.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/187/220_200_1/1877535dda3af6a3fde13bebd2e22de8.png",
     "name": "Цыплята корнишоны",
     "price": 550,
     "id": 3,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/2f5/220_200_1/2f54b9be8248d4bd97f44411b8c03a87.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/2f5/220_200_1/2f54b9be8248d4bd97f44411b8c03a87.jpg",
     "name": "Тушка Утки потрошеная",
     "price": 305,
     "id": 4,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/47e/220_200_1/47edda52255bdb30a367b1812fb04bfb.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/47e/220_200_1/47edda52255bdb30a367b1812fb04bfb.png",
     "name": "Плечо индейки",
     "price": 205,
     "id": 5,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/684/220_200_1/68449859e68d56e11bf8da7c6b60b86f.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/684/220_200_1/68449859e68d56e11bf8da7c6b60b86f.png",
     "name": "Печень куриная",
     "price": 179,
     "id": 6,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/528/220_200_1/5283a2a6f5301325840199e1cd1a0d09.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/528/220_200_1/5283a2a6f5301325840199e1cd1a0d09.png",
     "name": "Тушка утенка потрошеная",
     "price": 239,
     "id": 7,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/8fb/220_200_1/8fbdd0e3ec615ef50e49b3bfe80d0631.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/8fb/220_200_1/8fbdd0e3ec615ef50e49b3bfe80d0631.jpg",
     "name": "Утиные окорочка",
     "price": 585,
     "id": 8,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/7ea/220_200_1/7ead723f06acc1a9cdf1841f68ccbd7c.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/7ea/220_200_1/7ead723f06acc1a9cdf1841f68ccbd7c.png",
     "name": "Желудки индейки",
     "price": 299,
     "id": 9,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/def/220_200_1/def1ccefac0a9385b90255ca870ffe02.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/def/220_200_1/def1ccefac0a9385b90255ca870ffe02.png",
     "name": "Бедро индейки филе",
     "price": 410,
     "id": 10,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/28d/220_200_1/28dc379f8fdf3fec705a49038da873e5.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/28d/220_200_1/28dc379f8fdf3fec705a49038da873e5.jpg",
     "name": "Сердца куриные",
     "price": 215,
     "id": 11,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/34f/220_200_1/34fe5f2b91b5873c9de9f957db66d109.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/34f/220_200_1/34fe5f2b91b5873c9de9f957db66d109.png",
     "name": "Курица тушка",
     "price": 265,
     "id": 12,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/30f/220_200_1/30f36c618e0fcdc5f9f3aa39efc64f42.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/30f/220_200_1/30f36c618e0fcdc5f9f3aa39efc64f42.png",
     "name": "Печень индейки",
     "price": 329,
     "id": 13,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/448/220_200_1/448126fe782f9d8ba53ef7943fc3427c.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/448/220_200_1/448126fe782f9d8ba53ef7943fc3427c.png",
     "name": "Желудки куриные",
     "price": 140,
     "id": 14,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/900/220_200_1/900ae552c5c86d050fd259b40ca4068e.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/900/220_200_1/900ae552c5c86d050fd259b40ca4068e.png",
     "name": "Голень индейки",
     "price": 220,
     "id": 15,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/c97/220_200_1/c97e7bb10a9f2d419ddb44289cdfaf0f.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/c97/220_200_1/c97e7bb10a9f2d419ddb44289cdfaf0f.png",
     "name": "Грудка индейки филе",
     "price": 400,
     "id": 16,
-    "caregory": "bird"
+    "category": "bird"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/162/220_200_1/1622e79b610d67c7941fb338ffb9ef07.jpg",
-    "caregory": "pig",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/162/220_200_1/1622e79b610d67c7941fb338ffb9ef07.jpg",
+    "category": "pig",
     "id": 17,
     "price": 319,
     "name": "Карбонад свиной филе"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/uf/585/220_200_1/5852cebca30bc614df6742b5ef72c95d.jpg",
-    "caregory": "pig",
+    "imgname": "https://meat4u.ru/upload/resize_cache/uf/585/220_200_1/5852cebca30bc614df6742b5ef72c95d.jpg",
+    "category": "pig",
     "id": 18,
     "price": 319,
     "name": "Окорок свиной филе"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/uf/840/220_200_1/8405366bda9e7162ce19e15ec0c21c1f.jpg",
-    "caregory": "pig",
+    "imgname": "https://meat4u.ru/upload/resize_cache/uf/840/220_200_1/8405366bda9e7162ce19e15ec0c21c1f.jpg",
+    "category": "pig",
     "id": 19,
     "price": 490,
     "name": "Шея свиная"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/cc8/220_200_1/cc8d03728b139d23002ad20d9feb919e.png",
-    "caregory": "pig",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/cc8/220_200_1/cc8d03728b139d23002ad20d9feb919e.png",
+    "category": "pig",
     "id": 20,
     "price": 309,
     "name": "Лопатка свиная"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/cf9/220_200_1/cf9fa3d9ff204adebb0e102b9554ea9c.jpg",
-    "caregory": "pig",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/cf9/220_200_1/cf9fa3d9ff204adebb0e102b9554ea9c.jpg",
+    "category": "pig",
     "id": 21,
     "price": 449,
     "name": "Язык свиной"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/965/220_200_1/96538281e8ae251e1591bc867bea5ffe.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/965/220_200_1/96538281e8ae251e1591bc867bea5ffe.png",
     "name": "Язык говяжий",
     "price": 499,
     "id": 22,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/4f1/220_200_1/4f18f9bf8491885c86aa276ea0fb5c4d.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/4f1/220_200_1/4f18f9bf8491885c86aa276ea0fb5c4d.png",
     "name": "Лопатка говяжья замороженная",
     "price": 550,
     "id": 23,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/543/220_200_1/54306058e603c5a2c44c363cb724d924.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/543/220_200_1/54306058e603c5a2c44c363cb724d924.jpg",
     "name": "Говяжья вырезка замороженная",
     "price": 1300,
     "id": 24,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/7ce/220_200_1/7ce63c46fe30f86cc51adba206161c9d.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/7ce/220_200_1/7ce63c46fe30f86cc51adba206161c9d.png",
     "name": "Сердце говяжье",
     "price": 320,
     "id": 25,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/75b/220_200_1/75b9dc15e04416f9bc9922ea757f84ac.png",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/75b/220_200_1/75b9dc15e04416f9bc9922ea757f84ac.png",
     "name": "Тазобедренный отруб говяжий замороженный",
     "price": 585,
     "id": 26,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/ab7/220_200_1/ab7e0d539d45e821bde07cb2657079a5.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/ab7/220_200_1/ab7e0d539d45e821bde07cb2657079a5.jpg",
     "name": "Толстый край говяжий замороженный",
     "price": 570,
     "id": 27,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/3f9/220_200_1/3f93c0fea7c3b2a67839038b5645318f.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/3f9/220_200_1/3f93c0fea7c3b2a67839038b5645318f.jpg",
     "name": "Котлетное мясо говядина охлажденное",
     "price": 530,
     "id": 28,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/278/220_200_1/278c91a903a8a5f6421ff58f229df5af.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/278/220_200_1/278c91a903a8a5f6421ff58f229df5af.jpg",
     "name": "Голяшка говяжья охлажденная",
     "price": 570,
     "id": 29,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/288/220_200_1/28813b71d21c4dccefc3f72434b3f159.jpeg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/288/220_200_1/28813b71d21c4dccefc3f72434b3f159.jpeg",
     "name": "Голяшка говяжья замороженная",
     "price": 530,
     "id": 30,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/fa5/220_200_1/fa547a3afcc0c0b153869230fb338dee.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/fa5/220_200_1/fa547a3afcc0c0b153869230fb338dee.jpg",
     "name": "Реберный отруб говяжий охлажденный",
     "price": 550,
     "id": 31,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/d96/220_200_1/d96fb78736965a1b89ed3319d081b525.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/d96/220_200_1/d96fb78736965a1b89ed3319d081b525.jpg",
     "name": "Лопатка говяжья охлажденная",
     "price": 650,
     "id": 32,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/c0c/220_200_1/c0c816c480f57538241e301388cb84ae.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/c0c/220_200_1/c0c816c480f57538241e301388cb84ae.jpg",
     "name": "Тазобедренный отруб говяжий охлажденный",
     "price": 660,
     "id": 33,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/96b/220_200_1/96b01b06047e83f398fa5f9a1bee279c.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/96b/220_200_1/96b01b06047e83f398fa5f9a1bee279c.jpg",
     "name": "Грудинка говяжья охлажденная",
     "price": 635,
     "id": 34,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc": "https://meat4u.ru/upload/resize_cache/iblock/b62/220_200_1/b623baceb0f4be598324d4f12de52e49.jpg",
+    "imgname": "https://meat4u.ru/upload/resize_cache/iblock/b62/220_200_1/b623baceb0f4be598324d4f12de52e49.jpg",
     "name": "Шея говяжья охлажденная",
     "price": 630,
     "id": 35,
-    "caregory": "cow"
+    "category": "cow"
   },
   {
-    "imgSrc":"https://meat4u.ru/upload/resize_cache/iblock/1b6/220_200_1/1b6ceefd168fdb65c3a8ed5d46bfc631.jpg",
+    "imgname":"https://meat4u.ru/upload/resize_cache/iblock/1b6/220_200_1/1b6ceefd168fdb65c3a8ed5d46bfc631.jpg",
     "name":"Барана туша",
     "price": 320,
     "id":36,
-    "caregory": "sheep"
+    "category": "sheep"
 
   }
 ]
