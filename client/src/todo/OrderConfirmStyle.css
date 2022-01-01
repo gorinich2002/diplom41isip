@@ -5,11 +5,12 @@
     align-items: center;    
     font-size: 20px;
 }
+.orderForm table{
+    margin-bottom: 25px;
+}
 .orderForm input{
     margin: 3px;    
-    padding: 5px;
-    border-radius: 30px;
-    border: 1px solid black;
+    
 }
 .orderForm td{
 
@@ -20,13 +21,3 @@
     padding-left: 15px;
 }
 
-#orderBtn{
-    background-color: #198754;
-    color: white;
-    font-size: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 30px;
-    min-width: 200px;
-}

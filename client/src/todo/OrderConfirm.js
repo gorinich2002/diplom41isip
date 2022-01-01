@@ -5,6 +5,7 @@ import { ReduxMainContext } from "../index";
 import { useHttp } from "../hooks/http.hook";
 
 import "./OrderConfirmStyle.css";
+import { Button, Input, Label } from "reactstrap";
 
 function OrderConfirm(prop) {
   const store = useContext(ReduxMainContext);
@@ -65,56 +66,58 @@ function OrderConfirm(prop) {
           <tbody>
             <tr>
               <td>
-                <label>Фамилия</label>
+                <Label>Фамилия</Label>
               </td>
               <td>
-                <input name="surname" />
+                <Input name="surname" />
               </td>
             </tr>
             <tr>
               <td>
-                <label>Имя</label>
+                <Label>Имя</Label>
               </td>
               <td>
-                <input name="firstName" />
+                <Input name="firstName" />
               </td>
             </tr>
 
             <tr>
               <td>
-                <label>Адрес проживания</label>
+                <Label>Адрес проживания</Label>
               </td>
               <td>
-                <input name="address" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Номер телефона</label>
-              </td>
-              <td>
-                <input name="phone" />
+                <Input name="address" />
               </td>
             </tr>
             <tr>
               <td>
-                <label>Электронная почта</label>
+                <Label>Номер телефона</Label>
               </td>
               <td>
-                <input name="mail" />
+                <Input name="phone" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <Label>Электронная почта</Label>
+              </td>
+              <td>
+                <Input name="mail" />
               </td>
             </tr>
           </tbody>
         </table>
-        {/* <input name="cart" type="hidden" /> */}
-        <div
-          id="orderBtn"
+        {/* <Input name="cart" type="hidden" /> */}
+        <Button
+      
+        size='lg'
+          color="danger"
           colspan="2"
           style={{ textAlign: "center" }}
           onClick={sendOrder}
         >
           Заказать
-        </div>
+        </Button>
       </form>
     </div>
   );

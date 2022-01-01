@@ -35,7 +35,7 @@ router.post(
       const order = new Order( req.body);
 
       await order.save();
-
+      mailSend(clientData.mail, req.body)
       res.status(201).json({ message: "Заказ добавлен" });
     } catch (e) {
       res.status(500).json({ message: "Error, reload your page" });

@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { ReduxMainContext } from "../index";
 import { deleteProductIntoCartAction } from "../actions/actions";
 import "./CartStyle.css";
-
+import {Button} from 'reactstrap'
 function DeleteBtn(props) {
   const id = props.productId;
   const deleteListenr = props.deleteListenr;
@@ -12,21 +12,22 @@ function DeleteBtn(props) {
   const [isRemove, setRemove] = useState(false)
 if(!isRemove){
   return (
-    <div className='cart__DeleteBtn'
+    <Button
+    color="danger"
       onClick={() => {
         deleteListenr(id);
         setRemove(true)
       }}
     >
       Удалить
-    </div>
+    </Button>
   );
     }
     else{
       return(
-        <div className='cart__DeleteText'
+        <Button
 
-        >Товар удалён</div>
+        >Товар удалён</Button>
       )
     }
 }
@@ -118,7 +119,7 @@ function Cart(props) {
     </tr>
         </tbody>
       </table>
-      <div className='orderBtn'><Link to='/confirm'>Оформить заказ</Link></div>
+      <Button color="danger"><Link to='/confirm'>Оформить заказ</Link></Button>
     </div>
   );
   }
