@@ -9,7 +9,7 @@ app.use(express.json({extended:true}))
 const PORT = config.get("port") || 5000;
 
 app.use('/api/auth', require('./routes/auth.routers'))
-app.use('/api/auth', require('./routes/order.routers'))
+app.use('/api/', require('./routes/order.routers'))
 
 
 

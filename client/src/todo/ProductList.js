@@ -6,7 +6,7 @@ import {
   addProductToCartAction,
   deleteProductIntoCartAction,
 } from "../actions/actions";
-
+import {Button,Card, ButtonGroup} from 'reactstrap';
 // import ReduxMainContext from '../index'
 
 function Pagination(props) {
@@ -19,25 +19,25 @@ function Pagination(props) {
   for (let i = 1; i <= pugNum; i++) {
     if (i == pugCount) {
       lis.push(
-        <li className="pugBtn activePug" onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
+        <Button color="danger" onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
           {i}
-        </li>
+        </Button>
       );
     } else {
       lis.push(
-        <li className="pugBtn"  onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
+        <Button  onClick={()=>{setPugNum(i-1)}} key={"pugBtn" + i}>
           {i}
-        </li>
+        </Button>
       );
     }
   }
   return (
-    <ul>
-      <li className="pugBtn" onClick={decrementPugCount}>{"<"}</li>
+  <ButtonGroup style={{marginTop:'20px'}}>
+      <Button onClick={decrementPugCount}>{"<"}</Button>
       {lis}
 
-      <li className="pugBtn" onClick={incrementPugCount}>{">"}</li>
-    </ul>
+      <Button onClick={incrementPugCount}>{">"}</Button>
+    </ButtonGroup>
   );
 }
 
@@ -88,24 +88,26 @@ function ProductCard(props) {
   return (
     <>
     
-      <div className="productCard">
+      <Card className="productCard">
         <div>
           <img src={elem.imgname} />
-          <h2>
+          <p>
             {elem.name} <span className="productPrice">{elem.price.toFixed(2)}₽</span>
-          </h2>
+          </p>
         </div>
         {/* <p>{elem.desc}</p> */}
 
         <div>
           <div className="countBlock">
-            <div
-              className="plusBtn countBtn"
+            <Button
+              color="danger"
+              size='sm'
+
               onClick={decrementCount}
               style={inACart ? { display: "none" } : null}
             >
               -
-            </div>
+            </Button>
 
             <input
               type="number"
@@ -115,25 +117,26 @@ function ProductCard(props) {
               onBlur={checkMinusValueBlur}
             ></input>
 
-            <div
-              className=" minusBtn countBtn"
+            <Button
+              color="danger"
+              size='sm'
               onClick={incrementCount}
               style={inACart ? { display: "none" } : null}
             >
               +
-            </div>
+            </Button>
           </div>
           {inACart ? (
-            <div className="cardBtn deleteBtn" onClick={deleteBtnListener}>
+            <Button  block color="danger" size='sm'  onClick={deleteBtnListener}>
               Убрать товар из корзины
-            </div>
+            </Button>
           ) : (
-            <div className="cardBtn confirmBtn" onClick={addBtnListener}>
+            <Button  block color="danger" size='sm'  onClick={addBtnListener}>
               Добавить в корзину
-            </div>
+            </Button>
           )}
         </div>
-      </div>
+      </Card>
     </>
   );
 }

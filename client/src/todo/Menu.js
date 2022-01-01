@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { useEffect, useState } from "react";
 import "./MenuStyle.css";
+import{Input, Label} from 'reactstrap'
 function CategoryCheckBox(props) {
 const filterState = props.filterState;
   const [render, setRender] = useState(true);
@@ -8,26 +9,26 @@ const filterState = props.filterState;
   return (
     <>
       <li className='filterCheckBox'>
-        {" "}
-        <input checked={filterState.vegetables} id="vegetables" type="checkbox" name="vegetables" value="vegetables" onChange={changeCheckListener}/>{" "}
-        <label for="vegetables">Овощи</label>
+        
+        <Input checked={filterState.vegetables} id="vegetables" type="checkbox" name="vegetables" value="vegetables" onChange={changeCheckListener}/>
+        <Label for="vegetables">Овощи</Label>
       </li>
       <li className='filterCheckBox'>
-        {" "}
-        <input checked={filterState.milk} id="milk"  type="checkbox" name="milk" value="milk" onChange={changeCheckListener}/>{" "}
-        <label for="milk">Молочная продукция</label>
+        
+        <Input checked={filterState.milk} id="milk"  type="checkbox" name="milk" value="milk" onChange={changeCheckListener}/>
+        <Label for="milk">Молочная продукция</Label>
       </li>
       <li className='filterCheckBox'>
-        {" "}
-        <input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>{" "}
-        <label for="bread">Хлебобулочные изделия</label>
+        
+        <Input checked={filterState.bread} id = 'bread' type="checkbox" name="bread" value="bread" onChange={changeCheckListener}/>
+        <Label for="bread">Хлебобулочные изделия</Label>
       </li>
       <li className='filterCheckBox'>
-        {" "}
-        <input checked={filterState.meat} id = 'meat' type="checkbox" name="meat" value="meat" onChange={changeCheckListener}/>{" "}
-        <label for="meat">Мясные изделия</label>
+        
+        <Input checked={filterState.meat} id = 'meat' type="checkbox" name="meat" value="meat" onChange={changeCheckListener}/>
+        <Label for="meat">Мясные изделия</Label>
       </li>
-
+    
     </>
   );
 }
@@ -35,7 +36,7 @@ function Search(props) {
   return (
     <li className="searchLi">
       <i id="searchIcon" class="fas fa-search"></i>
-      <input
+      <Input
         id="menuSearch"
         type="text"
         onChange={props.searchCahgeHandler}
@@ -50,7 +51,7 @@ function MenuLi(props) {}
 function Menu(props) {
   return (
     <div id="menu">
-      <ul className="headerUl">
+    <ul style={{paddingLeft:'0'}}>
         <Search
           key="menuSearch"
           searchCahgeHandler={props.searchCahgeHandler}

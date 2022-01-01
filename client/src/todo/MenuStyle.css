@@ -1,8 +1,12 @@
 .filterCheckBox{
+    display: flex;
     color: white;
     margin: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+.filterCheckBox label{
+    margin-left: 10px;
 }
 .searchLi{
     margin-bottom: 40px;
