@@ -1,7 +1,7 @@
 const express = require("express");
 const config = require("config");
 const mongoose = require("mongoose");
-const {mailSend} = require('./mailer')
+const path = require('path')
 const app = express();
 
 app.use(express.json({extended:true}))
@@ -10,8 +10,10 @@ const PORT = config.get("port") || 5000;
 
 app.use('/api/auth', require('./routes/auth.routers'))
 app.use('/api/', require('./routes/order.routers'))
-
-
+app.get('/',(req,res)=>{
+  res.sendFile(path.join(__dirname ,"client", "/build" ,"/index.html"));
+})
+app.use(express.static(path.join(__dirname,"client", 'build')));
 
 
 async function start() {
