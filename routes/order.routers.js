@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const mongoose = require("mongoose");
 const auth = require("../middleware/auth.middleware")
-
+const mailSend = require('../mailer')
 
 const { check, validationResult } = require("express-validator");
 const router = Router();

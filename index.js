@@ -1,7 +1,7 @@
 const express = require("express");
 const config = require("config");
 const mongoose = require("mongoose");
-
+const {mailSend} = require('./mailer')
 const app = express();
 
 app.use(express.json({extended:true}))

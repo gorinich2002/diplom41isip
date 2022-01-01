@@ -36,9 +36,9 @@ function OrderConfirm(prop) {
    
     const loginHandler = async () => {
       try {
-        console.log(formData);
-        const data = await request("/api/auth/order", "POST", { ...formData });
        
+        const data = await request("/api/order", "POST", { ...formData });
+        alert(data.message)
         if (error) {
         }
       } catch (e) {
