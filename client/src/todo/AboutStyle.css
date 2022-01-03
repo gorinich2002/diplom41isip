@@ -8,3 +8,27 @@ p{
     margin: 20px;
     font-size: 20px;
 }
+.iconAboutBlock{
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.aboutIconRow{
+    padding:30px;
+}
+.iconAboutBlock i{
+    font-size: 50px;
+}
+.aboutViever  h1{
+    margin: 50px;
+}
+.aboutViever  p{
+    margin: 50px;
+}
+.contactBlock i{
+    margin-right: 10px;
+}
+.mapWrapper{
+    display: flex;
+    justify-content: center;
+}

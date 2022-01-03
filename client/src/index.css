@@ -68,4 +68,9 @@ main {
 a :hover{
   color: white !important;
 }
+body{overflow-y: hidden;}
+.sliderImg{
+  width: 700px;
+ 
+}
 /*# sourceMappingURL=index.css.map */
