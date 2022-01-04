@@ -10,7 +10,7 @@ const PORT = process.env.PORT || config.get("port") || 5000;
 
 app.use('/api/auth', require('./routes/auth.routers'))
 app.use('/api/', require('./routes/order.routers'))
-app.get('/',(req,res)=>{
+app.get('/*',(req,res)=>{
   res.sendFile(path.join(__dirname ,"client", "/build" ,"/index.html"));
 })
 app.use(express.static(path.join(__dirname,"client", 'build')));
