@@ -4,7 +4,6 @@ import "./MenuStyle.css";
 import{Input, Label} from 'reactstrap'
 function CategoryCheckBox(props) {
 const filterState = props.filterState;
-  const [render, setRender] = useState(true);
   const changeCheckListener = props.changeCheckListener;
   return (
     <>

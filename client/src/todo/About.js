@@ -15,8 +15,8 @@ import { useState } from "react";
 function About() {
   return (
     <>
-      <div className="aboutViever">
-        <h1>О нас</h1>
+      <div  className="aboutViever">
+        <h1 style={{marginTop:'10px'}}>На мангале 31</h1>
         <p>
           Наш магазин занимается продажей мяса с доставкой на дом. Мы занимаемся
           как розничными так и опровыми продажами. У нас на сайте вы можете
@@ -69,15 +69,7 @@ function About() {
         </div>
         <h1>Мы на карте</h1>
         <MapFrame />
-        {/* <iframe
-          width="600"
-          height="450"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA"
-        ></iframe> */}
+
         <h1>Контакты</h1>
         <div className="contactBlock">
           <Row>

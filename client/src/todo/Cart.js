@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { ReduxMainContext } from "../index";
 import { deleteProductIntoCartAction } from "../actions/actions";
 import "./CartStyle.css";
-import {Button} from 'reactstrap'
+import {Button, Table} from 'reactstrap'
 function DeleteBtn(props) {
   const id = props.productId;
   const deleteListenr = props.deleteListenr;
@@ -14,6 +14,7 @@ if(!isRemove){
   return (
     <Button
     color="danger"
+    size="sm"
       onClick={() => {
         deleteListenr(id);
         setRemove(true)
@@ -48,7 +49,7 @@ function ProductPosition(props) {
   }
 
   return (
-    <tr className="cartTable__row">
+    <tr >
       <td>
         <img className="cart__img" src={imgname} />
       </td>
@@ -57,7 +58,7 @@ function ProductPosition(props) {
       <td>{price}</td>
       <td>{count}</td>
       <td>{(count*price).toFixed(2)}</td>
-      <td className='btnTd'>
+      <td >
         <DeleteBtn deleteListenr={deleteListenr} productId={id} />
       </td>
     </tr>
@@ -86,9 +87,13 @@ function Cart(props) {
     <div id="cartViewer">
       <h1>Корзина</h1>
       <br />
-      <table className="cart__table">
+      <Table
+      className="cartTable"
+  responsive
+  striped
+>
         <tbody>
-          <tr className="cartTable__row">
+          <tr >
             <td>
 
             </td>
@@ -103,7 +108,7 @@ function Cart(props) {
           </tr>
           {ProductPositionList}
 
-          <tr className="cartTable__row">
+          <tr >
       <td>
         
       </td>
@@ -118,8 +123,8 @@ function Cart(props) {
       </td>
     </tr>
         </tbody>
-      </table>
-      <Button color="danger"><Link to='/confirm'>Оформить заказ</Link></Button>
+      </Table>
+      <Button style={{marginTop:'20px'}} color="danger"><Link to='/confirm'>Оформить заказ</Link></Button>
     </div>
   );
   }

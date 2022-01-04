@@ -73,4 +73,50 @@ body{overflow-y: hidden;}
   width: 700px;
  
 }
+
+@media (max-width: 1000px) {
+  body{
+    overflow-y: scroll;
+  }
+  main{
+    display: flex;
+    overflow-y:visible;
+    height: auto;
+    flex-direction: column;
+  }
+  #menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    padding: 0;
+    margin: 0;
+  }
+  #menu ul  li{
+    
+    margin-bottom: 0px;
+    font-size: 15px;  
+  }
+  #menu{
+    position: relative;
+    height: max-content;
+    overflow-y: visible;
+
+  }
+  #productViewer{
+    overflow-y: visible !important;
+    height: max-content !important;
+    overflow-x: auto;
+    
+  }
+  .cartTable{
+    font-size: 10px;
+  }
+  #cartViewer label{
+    font-size: 15px !important;
+  }
+  .cart__img{
+    display: none;
+  }
+ }
+
 /*# sourceMappingURL=index.css.map */
