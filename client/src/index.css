@@ -117,6 +117,27 @@ body{overflow-y: hidden;}
   .cart__img{
     display: none;
   }
+  .carousel{
+    display: none;
+  }
+  .aboutViever p{
+ 
+    font-size:15px;
+  }
+  .contactBlock .btn{
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .iconAboutBlock{
+    margin-right: -35px;
+    margin-left: -35px;
+  }
+  .iconAboutBlock .col{
+    font-size: 15px
+  }
+  .iconAboutBlock i::before{
+    font-size: 20px;
+  }
  }
 
 /*# sourceMappingURL=index.css.map */
