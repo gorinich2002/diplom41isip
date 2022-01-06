@@ -35,7 +35,6 @@ function Pagination(props) {
   <ButtonGroup style={{marginTop:'20px'}}>
       <Button onClick={decrementPugCount}>{"<"}</Button>
       {lis}
-
       <Button onClick={incrementPugCount}>{">"}</Button>
     </ButtonGroup>
   );
@@ -87,16 +86,13 @@ function ProductCard(props) {
   }
   return (
     <>
-    
-      <Card className="productCard">
+        <Card className="productCard">
         <div>
           <img src={elem.imgname} />
           <p>
             {elem.name} <span className="productPrice">{elem.price.toFixed(2)}₽</span>
           </p>
         </div>
-        {/* <p>{elem.desc}</p> */}
-
         <div>
           <div className="countBlock">
             <Button
@@ -108,7 +104,6 @@ function ProductCard(props) {
             >
               -
             </Button>
-
             <input
               type="number"
               className="countInput"

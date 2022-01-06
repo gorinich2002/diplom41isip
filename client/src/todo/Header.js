@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ReduxMainContext } from "../index";
 import "./HeaderStyle.css";
-import { Navbar, NavLink , Nav  } from "reactstrap";
+import { Navbar, NavLink, Nav } from "reactstrap";
 // Меняй массив ниже что бы изменить шапку
 
 let defaultHeaderList = [
@@ -17,9 +17,9 @@ let defaultHeaderList = [
 
 function HeaderLi(props) {
   const headerContent = defaultHeaderList.map((headerElement) => (
-    <NavLink >
+    <NavLink>
       <Link to={headerElement.href}>{headerElement.text}</Link>
-    </NavLink >
+    </NavLink>
   ));
 
   return headerContent;
@@ -27,38 +27,30 @@ function HeaderLi(props) {
 
 function Header() {
   const store = useContext(ReduxMainContext);
-
   const [cartCount, setCartCount] = useState(0);
-
   function handleChange() {
     setCartCount(store.getState().cart.length);
   }
-
   const unsubscribe = store.subscribe(handleChange);
-
   return (
     <header id="header">
-      <Navbar color="danger"  dark style={{listStyle:'none'}}>
-       <Nav>
-       <NavLink >
-          <Link to="/about">Оплата и доставка</Link>
-        </NavLink >
-        <NavLink >
-          <Link to="/shop">Каталог</Link>
-        </NavLink >
+      <Navbar color="danger" dark style={{ listStyle: "none" }}>
+        <Nav>
+          <NavLink>
+            <Link to="/about">Оплата и доставка</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/shop">Каталог</Link>
+          </NavLink>
 
-        <NavLink >
-          <Link to="/cart">
-            Корзина <div id="cartCounter">{cartCount}</div>
-          </Link>
-        </NavLink >
-       </Nav>
-        {/* <NavLink >
-    <Link to='/howToPay'>Вход</Link>
-    </NavLink > */}
+          <NavLink>
+            <Link to="/cart">
+              Корзина <div id="cartCounter">{cartCount}</div>
+            </Link>
+          </NavLink>
+        </Nav>
       </Navbar>
     </header>
   );
 }
-
 export default Header;

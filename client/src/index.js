@@ -2,15 +2,11 @@ import React, { createContext, useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "./fontawesome/css/all.min.css";
-import { Provider } from "react-redux";
-//todos
 import Header from "./todo/Header.js";
 import Menu from "./todo/Menu.js";
 import ProductList from "./todo/ProductList.js";
 import { createStore } from "redux";
-import { addProductToCartAction } from "./actions/actions";
 import mainShopReduser from "./redusers/mainReduser";
-import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
 import Cart from "./todo/Cart";
 import About from "./todo/About";
@@ -19,10 +15,6 @@ import RegisterForm from "./todo/RegisterForm";
 
 import OrderConfirm from "./todo/OrderConfirm";
 import prodList from "./prodlist.json";
-
-import { AuthContext } from "./context/AuthContext";
-
-import { useAuth } from "./hooks/auth.hook";
 
 const initialState = {
   cart: [],
@@ -34,10 +26,6 @@ export const ReduxMainContext = createContext(null);
 //vegetables
 
 function Root(props) {
-  const { token, userId, login, logout } = useAuth();
-
-  const isAuthenticated = !!token;
-
   const [filterState, setFilterState] = useState({
     searchValue: "",
     pig: true,
@@ -56,15 +44,7 @@ function Root(props) {
   }
 
   return (
-    <AuthContext.Provider
-      value={{
-        login,
-        token,
-        logout,
-        userId,
-        isAuthenticated,
-      }}
-    >
+
       <BrowserRouter>
         <Header key="header" />
         <main>
@@ -105,7 +85,7 @@ function Root(props) {
               <OrderConfirm />
             </Route>
             <Route path="/login">
-              <LoginForm isAuthenticated={isAuthenticated} />
+              <LoginForm/>
             </Route>
             <Route path="/register">
               <RegisterForm />
@@ -114,7 +94,6 @@ function Root(props) {
           </Switch>
         </main>
       </BrowserRouter>
-    </AuthContext.Provider>
   );
 }
 

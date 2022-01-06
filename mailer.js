@@ -1,15 +1,10 @@
 const config = require("config");
-
-
 const nodemailer = require('nodemailer')
-
 function mailConstructor(order){
-
     let str = `
     <span>Заказ на имя: </span><b>${order.clientData.firstName+' ' + order.clientData.surname}</b><br>
     <span>Адрес: </span><b>${order.clientData.address}</b><br>
     <span>Телефон: </span><b>${order.clientData.phone}</b><br>
-  
     <table>
     <tr>
         <th>№</th>

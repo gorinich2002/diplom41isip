@@ -6,9 +6,8 @@ const app = express();
 
 app.use(express.json({extended:true}))
 
-const PORT = process.env.PORT || config.get("port") || 5000;
+const PORT = process.env.PORT || config.get("port") || 8080;
 
-app.use('/api/auth', require('./routes/auth.routers'))
 app.use('/api/', require('./routes/order.routers'))
 app.get('/',(req,res)=>{
   res.sendFile(path.join(__dirname ,"client", "/build" ,"/index.html"));

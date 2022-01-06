@@ -1,42 +1,27 @@
-import { render } from "@testing-library/react";
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { ReduxMainContext } from "../index";
 import { useHttp } from "../hooks/http.hook";
-
 import "./OrderConfirmStyle.css";
 import { Button, Input, Label } from "reactstrap";
-
 function OrderConfirm(prop) {
   const store = useContext(ReduxMainContext);
-
   const { loading, error, request } = useHttp();
   function sendOrder() {
     const form = document.getElementById("orderForm");
     const formEls = form;
-    
     const formData = {
       isSended: false,
       products: store.getState().cart,
-
       clientData: {
         firstName: formEls["firstName"].value,
-
         address: formEls["address"].value,
-
         phone: formEls["phone"].value,
         surname: formEls["surname"].value,
-
         mail: formEls["mail"].value,
       },
-
-      // orders:[{type: Types.ObjectId, ref:'Orders'}]
     };
-  
-   
     const loginHandler = async () => {
       try {
-       
         const data = await request("/api/order", "POST", { ...formData });
         alert(data.message)
         if (error) {
@@ -47,16 +32,9 @@ function OrderConfirm(prop) {
         } else {
           alert("Что-то пошло не так. Попробуйте снова");
         }
-      }
-      
+      } 
     };
-   
     loginHandler();
-   
-
-
-  
-    // form.submit();
   }
   return (
     <div id="cartViewer">
@@ -80,7 +58,6 @@ function OrderConfirm(prop) {
                 <Input name="firstName" />
               </td>
             </tr>
-
             <tr>
               <td>
                 <Label>Адрес проживания</Label>
@@ -107,12 +84,10 @@ function OrderConfirm(prop) {
             </tr>
           </tbody>
         </table>
-        {/* <Input name="cart" type="hidden" /> */}
         <Button
-      
         size='lg'
           color="danger"
-          colspan="2"
+          colSpan="2"
           style={{ textAlign: "center" }}
           onClick={sendOrder}
         >

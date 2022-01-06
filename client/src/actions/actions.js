@@ -10,7 +10,4 @@ function deleteProductIntoCartAction(productId){
     payload: productId
   }
 }
-
-
-
 export  {addProductToCartAction, deleteProductIntoCartAction};

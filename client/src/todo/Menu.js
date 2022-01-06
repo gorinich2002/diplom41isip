@@ -8,22 +8,18 @@ const filterState = props.filterState;
   return (
     <>
       <li className='filterCheckBox'>
-        
         <Input checked={filterState.pig} id="pig" type="checkbox" name="pig" value="pig" onChange={changeCheckListener}/>
         <Label for="pig">Свинина</Label>
       </li>
       <li className='filterCheckBox'>
-        
         <Input checked={filterState.cow} id="cow"  type="checkbox" name="cow" value="cow" onChange={changeCheckListener}/>
         <Label for="cow">Говядина</Label>
       </li>
       <li className='filterCheckBox'>
-        
         <Input checked={filterState.sheep} id = 'sheep' type="checkbox" name="sheep" value="sheep" onChange={changeCheckListener}/>
         <Label for="sheep">Баранина</Label>
       </li>
       <li className='filterCheckBox'>
-        
         <Input checked={filterState.bird} id = 'bird' type="checkbox" name="bird" value="bird" onChange={changeCheckListener}/>
         <Label for="bird">Мясо птицы</Label>
       </li>
@@ -44,8 +40,6 @@ function Search(props) {
     </li>
   );
 }
-
-function MenuLi(props) {}
 
 function Menu(props) {
   return (
