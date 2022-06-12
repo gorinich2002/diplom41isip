@@ -16,3 +16,6 @@
 .container-fluid .nav-item{
     margin-left: 30px;
 }
+#header{
+    height: 58px;
+}

@@ -41,7 +41,7 @@ ul {
 main {
   display: flex;
   box-sizing: border-box;
-  height: 92vh; }
+  height: calc(100vh - 58px) }
 
 #menu {
   background-color: #a71d2a;
