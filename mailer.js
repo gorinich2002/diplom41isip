@@ -28,14 +28,14 @@ function mailConstructor(order){
 }
 let mailSend = function(mail,order){
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'yandex',
         auth:{
-            user:config.get('mailUser'),
-            pass:config.get('mailPass')
+            user:config.get('yandexLogin'),
+            pass:config.get('yandexPass')
         }
     })
     const mailOptions={
-        from:config.get('mailUser'),
+        from:config.get('yandexLogin'),
         to:mail,
         subject:'Заказ мяса',
         html:mailConstructor(order)
