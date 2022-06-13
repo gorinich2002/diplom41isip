@@ -1,7 +1,6 @@
 {
     "port":8080,
     "jwtSecret":"Diplom js pelevin",
-    "registerKey":"123123123",
     "mongoUri":"mongodb+srv://freshmeat311:vizp-belrus@cluster0.x3gwx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "mailUser": "freshmeat311@gmail.com",
     "mailPass":"vizp-belrus",
